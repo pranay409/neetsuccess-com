@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master electrostatics for NEET: Coulomb's law, electric fields, potentials & capacitors. NCERT-aligned strategies with exam patterns & solved examples.">
+    <title>Electrostatics for NEET: From Coulomb's Law to Capacitors | NEETSuccess</title>
+    <link rel="canonical" href="https://neetsuccess.com/neet-physics-electrostatics.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #0C1B33;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #E8A020;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background: rgba(232, 160, 32, 0.2);
+            color: #E8A020;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid #E8A020;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .article-date {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        article h2 {
+            color: #0C1B33;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        article p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        article ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+            line-height: 1.8;
+        }
+        
+        article li {
+            margin-bottom: 0.7rem;
+        }
+        
+        .highlight-box {
+            background: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box h3 {
+            color: #0C1B33;
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+        
+        .cta-box {
+            background: #0C1B33;
+            color: white;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .cta-box a {
+            display: inline-block;
+            background: #E8A020;
+            color: #0C1B33;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .cta-box a:hover {
+            background: #D89000;
+        }
+        
+        footer {
+            background: #0C1B33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/strategy.html">Strategy</a></li>
+            <li><a href="/motivation.html">Motivation</a></li>
+            <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="subject-badge">Physics</div>
+            <h1>Electrostatics for NEET: From Coulomb's Law to Capacitors</h1>
+            <p class="article-date">Published on July 01, 2026</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <article>
+            <p>Electrostatics is one of the most fundamental and scoring chapters in NEET Physics. From Coulomb's law to electric fields, potentials, and capacitors, this unit forms the backbone of electricity concepts tested across the entrance exam. Approximately 3-4 questions appear directly from electrostatics in NEET, making it essential to master both conceptual understanding and numerical problem-solving. This article breaks down the complete electrostatics curriculum aligned with NCERT Class 12 Physics, focusing on exam-specific patterns and high-yield concepts.</p>
+            
+            <h2>1. Coulomb's Law and Electric Field (NCERT Chapter 1)</h2>
+            
+            <p>Coulomb's law is the foundation of electrostatics. It states that the force between two point charges is directly proportional to the product of their charges and inversely proportional to the square of the distance between them.</p>
+            
+            <p><strong>Formula:</strong> F = k(q₁q₂)/r² where k = 8.99 × 10⁹ N⋅m²/C²</p>
+            
+            <p>NEET frequently tests your ability to:</p>
+            <ul>
+                <li>Calculate electrostatic force between multiple charges using vector addition</li>
+                <li>Determine electric field strength at various points due to point charges</li>
+                <li>Apply superposition principle for complex charge configurations</li>
+                <li>Understand field lines and equipotential surfaces</li>
+            </ul>
+            
+            <p>A key distinction many students miss: the electric field is a vector quantity and depends only on the source charge, not on the test charge. The force on a test charge is F = qE. In NEET, expect numerical problems involving three charges arranged in triangular or linear configurations where you must find net force or field using vector methods.</p>
+            
+            <div class="highlight-box">
+                <h3>💡 Key Tip: Linear Charge Distribution</h3>
+                <p>When dealing with continuous charge distributions (linear, surface, or volume), always integrate Coulomb's law. For uniform linear charge density λ, the electric field at perpendicular distance r is E = 2kλ/r. Memorizing these standard results saves significant time in NEET.</p>
+            </div>
+            
+            <h2>2. Electric Potential and Potential Difference (NCERT Chapter 1-2)</h2>
+            
+            <p>Electric potential is a scalar quantity representing the work done per unit charge. This is where many students struggle because they confuse potential with potential energy.</p>
+            
+            <p><strong>Key Relationships:</strong></p>
+            <ul>
+                <li>Potential V = W/q = kQ/r for a point charge Q</li>
+                <li>Potential difference VAB = VA - VB = ∫(E⋅dl) from B to A</li>
+                <li>Electric field E = -dV/dr (field is negative gradient of potential)</li>
+                <li>Equipotential surfaces are perpendicular to field lines</li>
+            </ul>
+            
+            <p>NEET examiners love testing the relationship between field and potential. A typical question asks: "If potential varies as V = 2x² + 3y, find the electric field at a point." You must compute E = -∇V = -2x(i) - 3(j).</p>
+            
+            <p>Another high-yield pattern: potential due to a uniformly charged sphere. Inside a conducting sphere, potential is constant. Outside, it behaves like a point charge. NEET has tested this distinction multiple times through questions about field strength and potential inside vs. outside conducting shells.</p>
+            
+            <h2>3. Gauss's Law and Electric Flux (NCERT Chapter 1)</h2>
+            
+            <p>Gauss's law states that the total electric flux through a closed surface is proportional to the enclosed charge: ∮(E⋅dA) = Qenc/ε₀</p>
+            
+            <p>This is one of the most powerful tools in electrostatics but remains underutilized by NEET aspirants. Using Gauss's law correctly requires:</p>
+            <ul>
+                <li>Selecting appropriate Gaussian surfaces (sphere, cylinder, or plane) based on symmetry</li>
+                <li>Recognizing when E is constant on the surface and parallel to the normal</li>
+                <li>Calculating electric field for infinite sheets, spherical shells, and cylindrical distributions</li>
+                <li>Understanding that field inside a conductor is zero</li>
+            </ul>
+            
+            <p>NEET typically asks about electric field near an infinite uniformly charged sheet: E = σ/(2ε₀), where σ is surface charge density. Between two oppositely charged parallel plates (as in a capacitor), the field is E = σ/ε₀.</p>
+            
+            <h2>4. Capacitors and Energy Storage (NCERT Chapter 2)</h2>
+            
+            <p>Capacitance is defined as C = Q/V. A parallel plate capacitor has C = ε₀A/d, where A is plate area and d is separation. This is the most tested capacitor formula in NEET.</p>
+            
+            <p><strong>Critical Concepts:</strong></p>
+            <ul>
+                <li>Capacitors in series: 1/Ceq = 1/C₁ + 1/C₂ + ... (voltage divides, charge same)</li>
+                <li>Capacitors in parallel: Ceq = C₁ + C₂ + ... (charge divides, voltage same)</li>
+                <li>Energy stored: U = ½QV = ½CV² = ½Q²/C</li>
+                <li>Effect of dielectric: C = εrε₀A/d; dielectric constant εr reduces field and increases capacitance</li>
+                <li>Force between capacitor plates: F = Q²/(2ε₀A)</li>
+            </ul>
+            
+            <p>NEET examiners frequently combine capacitor circuits with energy concepts. A typical question: "A capacitor charged to voltage V is connected to an uncharged identical capacitor. What is the final voltage and energy lost?" The answer involves charge redistribution and energy dissipation in the connecting wire.</p>
+            
+            <p>The dielectric effect is another high-yield area. When a dielectric material is inserted between capacitor plates, the electric field is reduced by factor εr, potential difference decreases, and capacitance increases proportionally. If the capacitor remains isolated (battery disconnected), charge stays constant but energy decreases.</p>
+            
+            <div class="cta-box">
+                <h3>Master Electrostatics with Expert Guidance</h3>
+                <p>Padhle AIM720 provides comprehensive NEET Physics coaching with detailed electrostatics modules, live doubt-clearing sessions, and thousands of solved problems from previous year papers.</p>
+                <a href="/best-neet-coaching-2025.html">Explore Padhle AIM720</a>
+            </div>
+            
+            <h2>Exam-Specific Patterns and Problem-Solving Strategy</h2>
+            
+            <p>Based on NEET trends over the past five years, electrostatics questions follow predictable patterns:</p>
+            
+            <p><strong>Numerical problems (40%):</strong> Multi-step calculations involving force, field, potential, and energy. These require careful FBD (free body diagram) analysis and vector addition.</p>
+            
+            <p><strong>Conceptual problems (35%):</strong> Understanding field behavior, equipotential surfaces, induced charges, and dielectric effects. These test deeper comprehension rather than formula memorization.</p>
+            
+            <p><strong>Circuit problems (25%):</strong> Capacitor networks, energy calculations, and behavior when dielectrics are inserted. These often combine with other circuit elements (resistors, inductors in AC circuits).</p>
+            
+            <p><strong>Success Strategy:</strong> First, master Coulomb's law and electric field using superposition principle. Practice at least 50 numerical problems. Then move to potential and potential difference, ensuring you understand the gradient relationship. Finally, deeply study capacitors, covering both isolated and battery-connected scenarios. Use dimensional analysis to verify formulas, especially for capacitance-related energy calculations.</p>
+            
+            <p>Electrostatics is highly scoring because the concepts are deterministic—there's no ambiguity if you understand the physics correctly. Dedicate 10-12 hours initially to build strong fundamentals, then 5-6 hours for revision and practice papers. This investment will guarantee 3-4 marks in NEET's physics section.</p>
+        </article>
+    </div>
+    
+    <footer>
+        <p><strong>NEETSuccess</strong> - Your Complete NEET Preparation Hub</p>
+        <p>Partnering with <strong>Padhle AIM720</strong>, India's #1 NEET Coaching Platform</p>
+        <p>&copy; 2026 NEETSuccess. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
