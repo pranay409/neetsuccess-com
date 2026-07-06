@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Physiology for NEET: Photosynthesis and Respiration Deep Dive | NEETSuccess</title>
+    <meta name="description" content="Master plant physiology for NEET: learn photosynthesis, respiration, light & dark reactions. NCERT-aligned guide with exam patterns & tips.">
+    <meta name="canonical" href="https://neetsuccess.com/neet-plant-physiology-guide.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 2rem;
+            flex-wrap: wrap;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #0C1B33;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #E8A020;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero .subject-badge {
+            display: inline-block;
+            background-color: rgba(232, 160, 32, 0.2);
+            color: #E8A020;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid #E8A020;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero .date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .article-content {
+            padding: 3rem 2rem;
+        }
+
+        .article-content h2 {
+            font-size: 1.8rem;
+            color: #0C1B33;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .article-content h3 {
+            font-size: 1.3rem;
+            color: #1A2F52;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .article-content p {
+            margin-bottom: 1rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .article-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.6rem;
+            color: #444;
+        }
+
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #0C1B33;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .highlight-box p {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-box {
+            background-color: #0C1B33;
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-box p {
+            color: #e0e0e0;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .cta-box a {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-box a:hover {
+            background-color: #d4901a;
+        }
+
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.8rem;
+        }
+
+        footer a {
+            color: #E8A020;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .exam-pattern {
+            background-color: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .exam-pattern strong {
+            color: #0C1B33;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            header nav {
+                gap: 1rem;
+            }
+
+            header nav a {
+                font-size: 0.85rem;
+            }
+
+            .article-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/strategy.html">Strategy</a>
+            <a href="/motivation.html">Motivation</a>
+            <a href="/best-neet-coaching-2025.html">Coaching</a>
+            <a href="/resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="subject-badge">Biology</div>
+        <h1>Plant Physiology for NEET: Photosynthesis and Respiration Deep Dive</h1>
+        <p class="date">Published on July 06, 2026</p>
+    </section>
+
+    <div class="container">
+        <article class="article-content">
+            <p>Plant physiology is a cornerstone of the NEET Biology curriculum, and two processes—photosynthesis and respiration—form the backbone of questions in this domain. These topics account for approximately 8-12% of the total NEET Biology score, making them essential for achieving a competitive rank. This comprehensive guide breaks down both processes using NCERT foundations while addressing exam-specific patterns and strategies.</p>
+
+            <h2>Understanding Photosynthesis: Light and Dark Reactions (NCERT Chapter 13)</h2>
+            
+            <p>Photosynthesis is the process by which plants convert light energy into chemical energy stored in glucose. The NEET syllabus emphasizes understanding the two main phases: light-dependent and light-independent reactions.</p>
+
+            <h3>Light-Dependent Reactions (Light Reactions)</h3>
+            
+            <p>Light reactions occur in the thylakoid membrane and involve the absorption of photons by chlorophyll. The process is divided into:</p>
+            
+            <ul>
+                <li><strong>Photosystem II (PSII):</strong> Absorbs light at 680 nm wavelength. Water molecules are split (photolysis) to release electrons, protons, and oxygen. This is the oxygen-evolution complex.</li>
+                <li><strong>Photosystem I (PSI):</strong> Absorbs light at 700 nm wavelength. Electrons from PSII are energized again, leading to the reduction of NADP+ to NADPH.</li>
+                <li><strong>Electron Transport Chain:</strong> As electrons move from PSII to PSI, the energy gradient drives proton pumping into the thylakoid lumen, creating a chemiosmotic gradient.</li>
+                <li><strong>ATP Synthesis:</strong> Protons flow through ATP synthase, driving the phosphorylation of ADP to ATP.</li>
+            </ul>
+
+            <p><strong>Key equation:</strong> 2H₂O + 2NADP⁺ + 3ADP + 3Pi → O₂ + 2NADPH + 2H⁺ + 3ATP</p>
+
+            <div class="exam-pattern">
+                <strong>Exam Pattern Alert:</strong> NEET frequently asks about the Z-scheme (or Z-pathway), which illustrates electron flow from water to NADP+ with energy changes. Be able to explain why two photosystems are needed and the role of the proton gradient in ATP synthesis. Questions often focus on the difference between cyclic and non-cyclic photophosphorylation.
+            </div>
+
+            <h3>Light-Independent Reactions (Calvin Cycle or Dark Reactions)</h3>
+            
+            <p>The Calvin cycle occurs in the stroma and is a cyclic process with three main phases:</p>
+            
+            <ul>
+                <li><strong>Carbon Fixation:</strong> CO₂ combines with RuBP (ribulose-1,5-bisphosphate) catalyzed by RuBisCO (ribulose-1,5-bisphosphate carboxylase/oxygenase). This produces two molecules of 3-PG (3-phosphoglycerate).</li>
+                <li><strong>Reduction:</strong> 3-PG is phosphorylated by ATP and reduced by NADPH to form G3P (glyceraldehyde-3-phosphate). Out of every 6 G3P produced, 1 exits the cycle for glucose synthesis.</li>
+                <li><strong>Regeneration:</strong> The remaining 5 G3P molecules are rearranged using ATP to regenerate 3 RuBP molecules, continuing the cycle.</li>
+            </ul>
+
+            <p>For every 3 turns of the Calvin cycle, one G3P is produced, requiring 9 ATP and 6 NADPH molecules. Two G3P molecules combine to form one glucose.</p>
+
+            <div class="highlight-box">
+                <h4>🔑 Key Tip for NEET Success</h4>
+                <p>Remember the 3:1 ratio: 3 CO₂ fixed → 3 RuBP regenerated. Always visualize the cycle with molecule counts. NEET loves asking "How many ATP and NADPH are needed to fix 3 CO₂?" The answer is 9 ATP and 6 NADPH. Write this on your study sheet!</p>
+            </div>
+
+            <h2>C3, C4, and CAM Photosynthesis: Adaptive Strategies</h2>
+            
+            <p>NEET exams test your understanding of plant adaptations through different photosynthetic pathways. These are crucial for scoring in comparative questions.</p>
+
+            <h3>C3 Photosynthesis (Calvin Pathway)</h3>
+            
+            <p>In C3 plants, the first stable product of CO₂ fixation is 3-phosphoglycerate (3-PG), a 3-carbon compound. Examples include wheat, rice, and most plants. However, C3 plants experience photorespiration when CO₂ concentration is low and O₂ is high, reducing photosynthetic efficiency.</p>
+
+            <h3>C4 Photosynthesis (Hatch-Slack Pathway)</h3>
+            
+            <p>C4 plants (maize, sugarcane, sorghum) use phosphoenolpyruvate (PEP) carboxylase instead of RuBisCO for initial CO₂ fixation, producing oxaloacetate (a 4-carbon compound). This process occurs in mesophyll cells, while the Calvin cycle occurs in bundle sheath cells. C4 photosynthesis is more efficient in high light and temperature conditions because it concentrates CO₂ around RuBisCO, minimizing photorespiration.</p>
+
+            <h3>CAM Photosynthesis (Crassulacean Acid Metabolism)</h3>
+            
+            <p>CAM plants (succulent plants like cacti and agave) fix CO₂ at night when stomata are open, storing it as malic acid. During the day, they close stomata to conserve water and use stored CO₂ for the Calvin cycle. This adaptation is ideal for arid environments.</p>
+
+            <div class="exam-pattern">
+                <strong>Exam Pattern Alert:</strong> NEET often asks comparative questions: "Which pathway is most efficient in tropical climates?" (C4 plants) or "Which plants can survive deserts?" (CAM plants). Understand the anatomical differences: C4 plants have Kranz anatomy (special bundle sheath cells), while CAM plants store acids in vacuoles.
+            </div>
+
+            <h2>Cellular Respiration: Aerobic and Anaerobic Pathways (NCERT Chapter 14)</h2>
+            
+            <p>Respiration is the oxidation of organic molecules to release energy in the form of ATP. The NEET syllabus covers both aerobic respiration (which yields ~30-32 ATP per glucose) and anaerobic respiration (fermentation).</p>
+
+            <h3>Aerobic Respiration: Four Main Stages</h3>
+            
+            <ul>
+                <li><strong>Glycolysis:</strong> Occurs in cytoplasm. Glucose (6C) is split into 2 pyruvate (3C) molecules, producing 2 ATP (net) and 2 NADH. This is an anaerobic process—it doesn't require oxygen.</li>
+                <li><strong>Pyruvate Oxidation:</strong> Pyruvate enters the mitochondrial matrix and is converted to Acetyl-CoA (2C) by the pyruvate dehydrogenase complex, releasing CO₂ and NADH.</li>
+                <li><strong>Citric Acid Cycle (Krebs Cycle):</strong> Acetyl-CoA enters an 8-step cycle producing 2 CO₂, 3 NADH, 1 FADH₂, and 1 ATP (or GTP) per turn. The cycle regenerates oxaloacetate.</li>
+                <li><strong>Electron Transport Chain (ETC) and Oxidative Phosphorylation:</strong> NADH and FADH₂ donate electrons to the chain, driving proton pumping across the inner mitochondrial membrane. The proton gradient powers ATP synthase.</li>
+            </ul>
+
+            <p><strong>Energy yield per glucose:</strong></p>
+            <ul>
+                <li>Glycolysis: 2 ATP + 2
