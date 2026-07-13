@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waves and Sound for NEET: Doppler Effect and Standing Waves | NEETSuccess</title>
+    <meta name="description" content="Master Doppler Effect and Standing Waves for NEET Physics. NCERT-based concepts, exam patterns, and problem-solving strategies.">
+    <link rel="canonical" href="https://neetsuccess.com/neet-physics-waves-sound.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            max-width: 1200px;
+            margin: 0 auto;
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            padding: 1rem 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #E8A020;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background: #E8A020;
+            color: #0C1B33;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero-date {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+        
+        /* Article Container */
+        .article-container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 3rem;
+        }
+        
+        /* Typography */
+        h2 {
+            color: #0C1B33;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        h3 {
+            color: #1A2F52;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.6rem;
+            line-height: 1.8;
+        }
+        
+        strong {
+            color: #0C1B33;
+            font-weight: 600;
+        }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+        
+        .highlight-box h3 {
+            color: #E8A020;
+            margin-top: 0;
+        }
+        
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #E8A020;
+            color: #0C1B33;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #D4891A;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(232, 160, 32, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: #0C1B33;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #E8A020;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            
+            .article-container {
+                padding: 1.5rem;
+                margin: 1.5rem auto;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/strategy.html">Strategy</a></li>
+            <li><a href="/motivation.html">Motivation</a></li>
+            <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subject-badge">Physics</span>
+            <h1>Waves and Sound for NEET: Doppler Effect and Standing Waves</h1>
+            <p class="hero-date">July 13, 2026</p>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <p>Waves and Sound is a fundamental topic in NEET Physics that consistently appears in the examination with 4-6 questions per year. Among these, the <strong>Doppler Effect and Standing Waves</strong> are critical subtopics that require both conceptual clarity and problem-solving expertise. This comprehensive guide, grounded in NCERT Class 11 and 12 syllabi, will equip you with the strategies needed to ace this section.</p>
+
+        <h2>Understanding the Doppler Effect (NCERT Class 11, Chapter 15)</h2>
+
+        <p>The Doppler Effect describes the change in frequency and wavelength of waves when the source or observer (or both) move relative to the medium. In NEET, this concept appears in three primary scenarios:</p>
+
+        <h3>1. Source Moving, Observer Stationary</h3>
+        <p>When a sound source moves toward a stationary observer, the sound waves compress, resulting in increased frequency. The apparent frequency is given by:</p>
+        <p style="text-align: center; font-weight: 600; margin: 1.5rem 0;">f' = f × v / (v - vs)</p>
+        <p>Where <strong>v</strong> is the speed of sound and <strong>vs</strong> is the velocity of the source. When the source moves away, the denominator becomes (v + vs), decreasing the frequency.</p>
+
+        <p>Conversely, when the source moves away, frequencies decrease, as observed in ambulance sirens passing by—a phenomenon NEET frequently tests through numerical problems.</p>
+
+        <h3>2. Observer Moving, Source Stationary</h3>
+        <p>When an observer approaches a stationary sound source, the frequency increases:</p>
+        <p style="text-align: center; font-weight: 600; margin: 1.5rem 0;">f' = f × (v + vo) / v</p>
+        <p>Where <strong>vo</strong> is the velocity of the observer. Moving away reverses the sign in the numerator.</p>
+
+        <h3>3. Both Source and Observer Moving</h3>
+        <p>The generalized Doppler formula combines both motions:</p>
+        <p style="text-align: center; font-weight: 600; margin: 1.5rem 0;">f' = f × (v + vo) / (v - vs)</p>
+        <p>NEET examiners often test this scenario with objects moving in opposite or same directions. Note: The convention matters—positive velocities typically indicate motion toward the medium's reference frame.</p>
+
+        <div class="highlight-box">
+            <h3>Key NEET Pattern: Sign Convention</h3>
+            <p>Always take velocities as positive when moving toward the reference point (usually the observer-source line origin) and negative when moving away. This prevents calculation errors in complex scenarios. Practice with at least 15-20 problems to master sign handling.</p>
+        </div>
+
+        <h2>Standing Waves: Theory and NEET Application (NCERT Class 11, Chapter 14)</h2>
+
+        <p>Standing waves form when two identical waves travel in opposite directions and interfere constructively and destructively, creating nodes (zero displacement) and antinodes (maximum displacement). This is foundational for understanding vibrating strings and air columns—topics that appear in 2-3 NEET questions yearly.</p>
+
+        <h3>Vibrating Strings</h3>
+        <p>For a string of length <strong>L</strong> fixed at both ends, standing waves form with the fundamental frequency:</p>
+        <p style="text-align: center; font-weight: 600; margin: 1.5rem 0;">f₁ = v / 2L = (1/2L)√(T/μ)</p>
+        <p>Where <strong>T</strong> is tension and <strong>μ</strong> is linear mass density. The nth harmonic has frequency:</p>
+        <p style="text-align: center; font-weight: 600; margin: 1.5rem 0;">fn = n × f₁ (n = 1, 2, 3, ...)</p>
+
+        <p>NEET questions often involve finding the number of nodes/antinodes for specific harmonics or calculating frequency changes when tension is modified. Remember: frequency is proportional to √T, so doubling tension increases frequency by a factor of √2.</p>
+
+        <h3>Air Columns and Resonance</h3>
+        <p>Open pipes (both ends open) and closed pipes (one end closed) exhibit different resonance patterns. For an open pipe:</p>
+        <p style="text-align: center; font-weight: 600; margin: 1.5rem 0;">fn = n × v / 2L (n = 1, 2, 3, ...)</p>
+        <p>For a closed pipe:</p>
+        <p style="text-align: center; font-weight: 600; margin: 1.5rem 0;">fn = (2n-1) × v / 4L (n = 1, 2, 3, ...)</p>
+
+        <p>A closed pipe produces only odd harmonics. NEET examiners frequently ask students to identify pipe types based on harmonic relationships or calculate frequencies under temperature changes (since sound velocity depends on temperature: v ∝ √T).</p>
+
+        <h2>NEET Exam Pattern: Questions to Expect</h2>
+
+        <p>Based on the last 5 years of NEET papers (2021-2025), the following question types dominate:</p>
+
+        <ol>
+            <li><strong>Conceptual Doppler Shift:</strong> Identifying frequency changes in multiple-observer or multiple-source scenarios (1-2 questions yearly).</li>
+            <li><strong>Numerical Problems:</strong> Calculating apparent frequencies when vehicles move at specific speeds, often involving highway or train scenarios.</li>
+            <li><strong>Standing Wave Harmonic Analysis:</strong> Determining the number of harmonics within an audible frequency range (20 Hz to 20,000 Hz).</li>
+            <li><strong>String and Pipe Resonance:</strong> Finding frequencies when physical parameters (tension, length, temperature) change.</li>
+            <li><strong>Beat Frequency:</strong> Determining beat patterns when two slightly different frequencies interfere, a subtopic closely related to standing waves.</li>
+        </ol>
+
+        <p>In 2024 NEET, a question required calculating the frequency shift when a train approaches and recedes, combining Doppler concepts with real-world physics. Practicing such applications strengthens exam readiness.</p>
+
+        <div class="highlight-box">
+            <h3>Exam Strategy: Speed Matters</h3>
+            <p>Pre-derive and memorize all standing wave formulas for open/closed pipes and vibrating strings. In actual exams, you'll save 2-3 minutes per question by not re-deriving. Use dimensional analysis to verify formula correctness before solving numericals—this prevents silly algebraic mistakes.</p>
+        </div>
+
+        <h2>Practice Strategy and Common Mistakes</h2>
+
+        <p>Success in Waves and Sound requires systematic practice:</p>
+
+        <ul>
+            <li><strong>Phase 1 (Weeks 1-2):</strong> Solve all NCERT examples and end-chapter problems. Ensure you understand the derivations, not just the formulas.</li>
+            <li><strong>Phase 2 (Weeks 3-4):</strong> Work through previous year NEET questions (2015-2025) categorized by subtopic. Track time—aim for 1.5 minutes per question.</li>
+            <li><strong>Phase 3 (Weeks 5-6):</strong> Attempt mock tests and competitive exam papers from other sources to expose yourself to varied question formats.</li>
+        </ul>
+
+        <p><strong>Common Mistakes to Avoid:</strong></p>
+        <ul>
+            <li>Confusing the Doppler formula—always verify direction of motion before applying formula.</li>
