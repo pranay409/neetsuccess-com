@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomolecules for NEET: Proteins, Carbs and Nucleic Acids Simplified | NEETSuccess</title>
+    <meta name="description" content="Master NEET Chemistry biomolecules: proteins, carbohydrates & nucleic acids. NCERT-based concepts, exam patterns & practice tips.">
+    <link rel="canonical" href="https://neetsuccess.com/neet-chemistry-biomolecules.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        header {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #0C1B33;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #E8A020;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: rgba(232, 160, 32, 0.1);
+            border-radius: 50%;
+            transform: translate(100px, -100px);
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: #E8A020;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .article-date {
+            color: #ddd;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+        
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #0C1B33;
+            margin: 2.5rem 0 1.5rem 0;
+            font-weight: 700;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            color: #1A2F52;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            color: #444;
+        }
+        
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box strong {
+            color: #E8A020;
+            font-weight: 700;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            color: #E8A020;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            color: #ddd;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #f5b844;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        li {
+            margin-bottom: 0.6rem;
+            color: #444;
+        }
+        
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            color: #ddd;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer a {
+            color: #E8A020;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .exam-pattern {
+            background-color: #f8f9fa;
+            padding: 1.2rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+        
+        .exam-pattern strong {
+            color: #0C1B33;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NEETSuccess</div>
+            <ul>
+                <li><a href="/strategy.html">Strategy</a></li>
+                <li><a href="/motivation.html">Motivation</a></li>
+                <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subject-badge">Chemistry</span>
+            <h1>Biomolecules for NEET: Proteins, Carbs and Nucleic Acids Simplified</h1>
+            <p class="article-date">July 14, 2026</p>
+        </div>
+    </section>
+
+    <article class="article-container">
+        <p>Biomolecules form the foundation of organic chemistry in NEET and are crucial for scoring well in both Chemistry and Biology sections. This chapter bridges chemistry and biology, making it essential for aspirants aiming for a high percentile. The NEET Chemistry curriculum emphasizes carbohydrates, proteins, and nucleic acids—three macromolecules that appear in multiple question patterns. Understanding their structure, classification, and functions not only helps you ace theory questions but also excel in mechanism-based problems.</p>
+
+        <h2>Understanding Carbohydrates: Classification and Exam Patterns</h2>
+        
+        <p>Carbohydrates are organic compounds with the general formula Cn(H₂O)m and serve as major energy sources and structural components in living organisms. NEET exams typically focus on three main classifications: monosaccharides, disaccharides, and polysaccharides. According to NCERT Class 12 Chapter 14, monosaccharides are the basic units—glucose and fructose being the most commonly tested.</p>
+
+        <h3>Monosaccharides and Their Properties</h3>
+        <p>Monosaccharides contain a single polyhydroxy aldehyde or ketone functional group. Glucose (C₆H₁₂O₆) exists in both open-chain and cyclic forms, with the cyclic pyranose form being predominant in aqueous solution. NEET questions often ask about:</p>
+        <ul>
+            <li>The anomeric carbon and α/β isomers of glucose</li>
+            <li>Mutarotation phenomena and its mechanism</li>
+            <li>Distinction between aldoses and ketoses</li>
+            <li>Reducing and non-reducing sugars</li>
+        </ul>
+
+        <div class="exam-pattern">
+            <strong>Exam Pattern Insight:</strong> NEET typically includes 1-2 questions on carbohydrate classification, focusing on structural isomerism and functional groups. Expect questions on Fehling's test, Benedict's test, and iodine test for starch identification.
+        </div>
+
+        <h3>Disaccharides and Polysaccharides</h3>
+        <p>Disaccharides like sucrose, maltose, and lactose are formed through glycosidic bonds between two monosaccharide units. Polysaccharides such as starch, cellulose, and glycogen are polymers of glucose. Key exam patterns include:</p>
+        <ul>
+            <li>Types of glycosidic linkages (α-1,4 in starch, β-1,4 in cellulose)</li>
+            <li>Why cellulose is non-reducing while starch can be reducing</li>
+            <li>Structural differences explaining digestibility (humans digest starch but not cellulose)</li>
+        </ul>
+
+        <h2>Proteins: Structure, Classification, and NEET Essentials</h2>
+
+        <p>Proteins are polymers of amino acids linked through peptide bonds. This chapter is fundamental because proteins appear in both NEET Chemistry and Biology syllabi. According to NCERT, there are 20 common amino acids, each with unique R-groups determining protein properties. NEET exams test both structure and function aspects extensively.</p>
+
+        <h3>Amino Acids and Peptide Bonds</h3>
+        <p>Amino acids are organic compounds with both amino (-NH₂) and carboxyl (-COOH) groups attached to the same carbon. The general structure is R-CH(NH₂)-COOH. The peptide bond formed between amino acids is a covalent C-N bond with partial double-bond character, restricting rotation and creating planar geometry. Common NEET questions include:</p>
+        <ul>
+            <li>Drawing structures of amino acids (glycine, alanine, aspartic acid)</li>
+            <li>Understanding zwitterionic forms and isoelectric points</li>
+            <li>Distinguishing essential vs. non-essential amino acids</li>
+            <li>Mechanism of peptide bond formation (condensation reaction)</li>
+        </ul>
+
+        <div class="highlight-box">
+            <strong>Key NEET Tip:</strong> Remember that amino acids are zwitterions at physiological pH—they have both +NH₃ and -COO⁻ groups. This concept frequently appears in questions about amino acid behavior and protein solubility. Always visualize the isoelectric point when answering protein charge-related questions.
+        </div>
+
+        <h3>Protein Structure Hierarchy</h3>
+        <p>NEET emphasizes the four levels of protein organization: primary, secondary, tertiary, and quaternary structures. Primary structure refers to the linear sequence of amino acids. Secondary structure includes α-helices and β-pleated sheets stabilized by hydrogen bonds between backbone atoms (not side chains). Tertiary structure arises from interactions between R-groups: hydrogen bonds, ionic bonds, disulfide bridges, and hydrophobic interactions. Quaternary structure applies only to multi-subunit proteins like hemoglobin.</p>
+
+        <div class="exam-pattern">
+            <strong>Exam Pattern Insight:</strong> NEET usually includes 2-3 questions on protein structure. Expect diagrams showing hydrogen bonding in α-helices, disulfide bond formation, and questions comparing denaturation vs. hydrolysis of proteins. Some questions test your ability to predict tertiary structure changes with pH or temperature variations.
+        </div>
+
+        <h3>Protein Classification and Functions</h3>
+        <p>Proteins are classified as fibrous (structural, insoluble) or globular (functional, soluble). Fibrous proteins like collagen provide structural support, while globular proteins like enzymes, antibodies, and hormones perform metabolic functions. NEET questions often ask about:</p>
+        <ul>
+            <li>Why enzymes are globular proteins</li>
+            <li>The role of tertiary structure in enzyme specificity</li>
+            <li>How protein denaturation affects enzyme activity</li>
+            <li>The difference between protein hydrolysis and denaturation</li>
+        </ul>
+
+        <h2>Nucleic Acids: DNA, RNA, and Genetic Information</h2>
+
+        <p>Nucleic acids store and transmit genetic information through their sequence of nucleotides. NEET covers both DNA and RNA structures, with emphasis on the differences between them. This topic is crucial because it connects chemistry to biological concepts tested in the Biology section.</p>
+
+        <h3>Nucleotide Structure and Components</h3>
+        <p>Each nucleotide consists of three components: a pentose sugar (ribose in RNA, deoxyribose in DNA), a nitrogenous base, and a phosphate group. The key difference between DNA and RNA is the presence of a hydroxyl (-OH) group at the 2'-carbon in ribose, making RNA more chemically reactive. NEET questions frequently test:</p>
+        <ul>
+            <li>Drawing complete nucleotide structures with all three components</li>
+            <li>The difference between ribose and deoxyribose</li>
+            <li>Purine vs. pyrimidine bases and their structures</li>
+            <li>Phosphodiester bond formation between nucleotides</li>
+        </ul>
+
+        <h3>DNA Structure and Base Pairing</h3>
+        <p>DNA is a double-stranded helix with complementary base pairing: adenine (A) with thymine (T) through two hydrogen bonds, and guanine (G) with cytosine (C) through three hydrogen bonds. This asymmetry explains DNA's stability and replication fidelity. NEET exams test Chargaff
