@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master alkanes, alkenes, alkynes & arenes for NEET. Complete guide with reactions, nomenclature & exam patterns from NCERT.">
+    <title>Hydrocarbons for NEET: Alkanes, Alkenes, Alkynes and Arenes | NEETSuccess</title>
+    <link rel="canonical" href="https://neetsuccess.com/neet-chemistry-hydrocarbons-guide.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #0C1B33;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #E8A020;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .article-date {
+            font-size: 0.95rem;
+            color: #d0d0d0;
+        }
+        
+        .article-container {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        
+        .article-container h2 {
+            font-size: 1.8rem;
+            color: #0C1B33;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #E8A020;
+            padding-left: 1rem;
+        }
+        
+        .article-container h2:first-child {
+            margin-top: 0;
+        }
+        
+        .article-container p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .article-container ul, .article-container ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        .article-container li {
+            margin-bottom: 0.7rem;
+            line-height: 1.8;
+        }
+        
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 5px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box strong {
+            color: #0C1B33;
+            font-weight: 600;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #333;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            color: #e0e0e0;
+        }
+        
+        .cta-box a {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .cta-box a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(232, 160, 32, 0.4);
+        }
+        
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        
+        footer strong {
+            color: #E8A020;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 1rem;
+                padding: 0.75rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .article-container {
+                padding: 1.5rem;
+                margin: 1.5rem;
+            }
+            
+            .article-container h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/strategy.html">Strategy</a>
+            <a href="/motivation.html">Motivation</a>
+            <a href="/best-neet-coaching-2025.html">Coaching</a>
+            <a href="/resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <span class="subject-badge">Chemistry</span>
+            <h1>Hydrocarbons for NEET: Alkanes, Alkenes, Alkynes and Arenes</h1>
+            <p class="article-date">July 17, 2026</p>
+        </div>
+    </section>
+
+    <article class="article-container">
+        <p><strong>Hydrocarbons</strong> are one of the most fundamental topics in organic chemistry and constitute a significant portion of NEET question papers. This comprehensive guide covers alkanes, alkenes, alkynes, and arenes as per NCERT Class 11 and Class 12 chemistry curriculum. Understanding the structure, properties, and reactions of these compounds is essential for cracking the organic chemistry section of NEET.</p>
+
+        <h2>Introduction to Hydrocarbons and Classification</h2>
+        
+        <p>Hydrocarbons are organic compounds containing only carbon and hydrogen atoms. They form the backbone of organic chemistry and are classified based on the type of carbon-carbon bonds present. The NCERT textbook categorizes hydrocarbons into four main classes: alkanes, alkenes, alkynes, and arenes.</p>
+
+        <p><strong>Alkanes</strong> contain only single C-C bonds and follow the general formula CₙH₂ₙ₊₂ (for acyclic alkanes). They are also known as saturated hydrocarbons.</p>
+
+        <p><strong>Alkenes</strong> contain at least one C=C double bond with the general formula CₙH₂ₙ. These are unsaturated hydrocarbons and show more reactive behavior than alkanes.</p>
+
+        <p><strong>Alkynes</strong> contain triple bonds (C≡C) with the general formula CₙH₂ₙ₋₂. They are the most unsaturated among simple hydrocarbons and display the highest reactivity.</p>
+
+        <p><strong>Arenes</strong> or aromatic hydrocarbons contain benzene rings and demonstrate resonance stabilization. Benzene (C₆H₆) is the simplest and most important arene.</p>
+
+        <div class="highlight-box">
+            <p><strong>Key Tip for NEET:</strong> Always remember the general formulas for each class of hydrocarbons. Approximately 5-7% of NEET questions directly test nomenclature and structure identification. Practice IUPAC naming thoroughly as it's a frequent source of marks.</p>
+        </div>
+
+        <h2>Alkanes: Properties, Nomenclature and Reactions</h2>
+
+        <p>Alkanes are the simplest hydrocarbons and form the foundation for understanding more complex organic molecules. According to NCERT Chapter 13 (Hydrocarbons, Class 11), alkanes exhibit the following characteristics:</p>
+
+        <p><strong>Physical Properties:</strong></p>
+        <ul>
+            <li>Non-polar molecules with weak intermolecular forces</li>
+            <li>Insoluble in water but soluble in non-polar solvents</li>
+            <li>Boiling points increase with increasing molecular weight and branching decreases boiling point</li>
+            <li>Density increases with chain length</li>
+        </ul>
+
+        <p><strong>Nomenclature:</strong> IUPAC nomenclature for alkanes requires identifying the longest carbon chain and numbering from the end nearest to the substituent. Common alkanes include methane (CH₄), ethane (C₂H₆), propane (C₃H₈), and butane (C₄H₁₀). Isomerism becomes prominent from butane onwards.</p>
+
+        <p><strong>Chemical Reactions of Alkanes:</strong></p>
+        <ul>
+            <li><strong>Combustion:</strong> CₙH₂ₙ₊₂ + (3n+1)/2 O₂ → nCO₂ + (n+1)H₂O (highly exothermic, fundamental in energy production)</li>
+            <li><strong>Halogenation:</strong> Free radical substitution reaction producing alkyl halides. Cl₂ and Br₂ are commonly used. This reaction proceeds via initiation, propagation, and termination steps.</li>
+            <li><strong>Isomerization:</strong> At high temperatures and pressures with a catalyst, alkanes rearrange to more stable isomers.</li>
+            <li><strong>Cracking:</strong> Long-chain alkanes break into smaller, more useful molecules under heat and catalytic conditions.</li>
+        </ul>
+
+        <p>NEET frequently tests students on the mechanism of halogenation and the factors affecting substitution patterns. Practice drawing complete reaction mechanisms for free radical halogenation as it appears in both MCQ and numerical problem formats.</p>
+
+        <h2>Alkenes and Alkynes: Unsaturated Hydrocarbons and Addition Reactions</h2>
+
+        <p>Unsaturated hydrocarbons containing C=C or C≡C bonds exhibit markedly different reactivity compared to alkanes. NCERT Chapter 13 dedicates substantial coverage to their reactions, which are critical for NEET success.</p>
+
+        <p><strong>Properties of Alkenes:</strong> Alkenes are more reactive than alkanes due to the presence of pi (π) electrons in the double bond. They show nucleophilic behavior and readily undergo addition reactions. Important alkenes include ethylene (ethene, C₂H₄) and propylene (propene, C₃H₆).</p>
+
+        <p><strong>Key Reactions of Alkenes:</strong></p>
+        <ul>
+            <li><strong>Addition of HX:</strong> Markovnikov's rule governs the addition of hydrogen halides. The hydrogen adds to the carbon bearing more hydrogens, while the halogen adds to the carbon bearing fewer hydrogens. This is tested frequently in NEET.</li>
+            <li><strong>Addition of H₂O:</strong> Acid-catalyzed hydration follows Markovnikov's rule. The hydroxyl group adds to the more substituted carbon.</li>
+            <li><strong>Addition of X₂:</strong> Bromine and chlorine undergo anti addition across the double bond, producing vicinal dihalides. Brown bromine solution discoloration is a characteristic test.</li>
+            <li><strong>Oxidation:</strong> Alkenes are oxidized by KMnO₄ (cold, dilute) to diols or by ozonolysis to aldehydes/ketones.</li>
+            <li><strong>Polymerization:</strong> Alkenes undergo addition polymerization to form polymers like polyethylene.</li>
+        </ul>
+
+        <p><strong>Properties of Alkynes:</strong> Alkynes are even more unsaturated and reactive. Ethyne (acetylene, C₂H₂) is the simplest and most important alkyne. The triple bond consists of one σ bond and two π bonds.</p>
+
+        <p><strong>Key Reactions of Alkynes:</strong></p>
+        <ul>
+            <li><strong>Addition of HX:</strong> Similar to alkenes but occurs in two stages. First addition follows Markovnikov's rule; second addition may follow anti-Markovnikov's pattern with specific reagents.</li>
+            <li><strong>Addition of H₂:</strong> Complete hydrogenation produces alkanes; partial hydrogenation (Lindlar's catalyst) produces cis-alkenes.</li>
+            <li><strong>Oxidation:</strong> Strong oxidizing agents cleave the triple bond producing carboxylic acids or CO₂.</li>
+            <li><strong>Acidic Properties:</strong> Terminal alkynes are weakly acidic and can be converted to alkyne anions with strong bases like NaH or NaNH₂.</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>Exam Pattern Alert:</strong> NEET commonly includes 2-3 questions on Markovnikov's rule application and reaction mechanisms. Be prepared with complete mechanistic representations and be able to predict major and minor products. Stereochemistry (cis/trans) is also frequently tested in context of additions.</p>
+        </div>
+
+        <h2>Arenes: Benzene and Aromatic Hydrocarbons</h2>
+
+        <p>Aromatic hydrocarbons, particularly benzene, represent a unique class of hydrocarbons with extraordinary stability due to resonance. NCERT Chapter 13 emphasizes the special properties of benzene and its derivatives, making this a high-frequency topic in NEET.</p>
+
+        <p><strong>Structure and Stability of Benzene:</strong> Benzene (C₆H₆) consists of six carbon atoms arranged in a hexagonal ring with
