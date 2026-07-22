@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Fluid Mechanics for NEET: Learn Bernoulli's principle, viscosity, surface tension with exam patterns & solved examples.">
+    <title>Fluid Mechanics for NEET: Bernoulli, Viscosity and Surface Tension | NEETSuccess</title>
+    <link rel="canonical" href="https://neetsuccess.com/neet-physics-fluid-mechanics.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(232, 160, 32, 0.2);
+            color: #E8A020;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            background: white;
+        }
+        
+        .content h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #0C1B33;
+        }
+        
+        .content p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .content li {
+            margin-bottom: 12px;
+            color: #555;
+            font-size: 16px;
+        }
+        
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 5px solid #E8A020;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box p {
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        
+        .cta-box {
+            background-color: #1A2F52;
+            color: white;
+            padding: 40px;
+            margin: 50px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-box p {
+            color: #ddd;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #d89010;
+        }
+        
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 15px;
+                font-size: 12px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .content h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">NEETSuccess</div>
+            <nav>
+                <ul>
+                    <li><a href="/strategy.html">Strategy</a></li>
+                    <li><a href="/motivation.html">Motivation</a></li>
+                    <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <span class="subject-badge">Physics</span>
+            <h1>Fluid Mechanics for NEET: Bernoulli, Viscosity and Surface Tension</h1>
+            <div class="hero-meta">Published on July 22, 2026</div>
+        </div>
+    </section>
+
+    <main class="content">
+        <p>Fluid Mechanics is a crucial chapter in NEET Physics that typically accounts for 8-12 marks in the exam. This chapter covers three fundamental concepts: Bernoulli's principle, viscosity, and surface tension. Mastering these topics requires a clear understanding of both theoretical foundations and practical problem-solving approaches. Let's explore each concept systematically to help you excel in your NEET examination.</p>
+
+        <h2>Understanding Bernoulli's Principle and Applications</h2>
+        
+        <p>Bernoulli's equation is one of the most important theorems in fluid mechanics, derived from the conservation of energy principle. It states that for an incompressible, frictionless fluid in steady flow, the sum of pressure energy, kinetic energy, and potential energy per unit volume remains constant along a streamline.</p>
+        
+        <p>The mathematical form of Bernoulli's equation is:</p>
+        <p style="text-align: center; font-weight: 600; margin: 20px 0;">P + ½ρv² + ρgh = constant</p>
+        
+        <p>Where P is pressure, ρ is density, v is velocity, g is acceleration due to gravity, and h is height.</p>
+        
+        <p>Bernoulli's principle has numerous practical applications that frequently appear in NEET exams:</p>
+        <ul>
+            <li><strong>Venturimeter:</strong> Used to measure the flow rate of liquids. When fluid enters a narrow section, its velocity increases, causing pressure to decrease.</li>
+            <li><strong>Pitot Tube:</strong> Measures the velocity of flowing fluids by comparing stagnation pressure with static pressure.</li>
+            <li><strong>Aircraft Wings:</strong> The curved shape creates different velocities above and below, resulting in pressure differences that generate lift.</li>
+            <li><strong>Atomizers and Sprayers:</strong> Fast-moving air creates low pressure that draws liquid upward and disperses it.</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>Key Exam Tip:</strong> Bernoulli's principle is frequently tested through numerical problems on Venturimeter and Pitot tube. Always identify two points on the fluid flow and apply the equation systematically. Remember to check if the fluid levels are at the same height (h₁ = h₂) before simplifying the equation.</p>
+        </div>
+
+        <h2>Viscosity: Internal Friction in Fluids (NCERT Class 11)</h2>
+        
+        <p>Viscosity refers to the internal friction of a fluid, or the resistance it offers to flow. It is a crucial property that determines how easily a fluid can flow. According to Newton's law of viscosity, the viscous force is proportional to the velocity gradient and the area of contact.</p>
+        
+        <p>The formula for viscous force is:</p>
+        <p style="text-align: center; font-weight: 600; margin: 20px 0;">F = -η A (dv/dx)</p>
+        
+        <p>Where η (eta) is the coefficient of viscosity, A is the area, and dv/dx is the velocity gradient.</p>
+        
+        <p>Important concepts related to viscosity include:</p>
+        <ul>
+            <li><strong>Terminal Velocity:</strong> When a sphere falls through a viscous fluid, it eventually reaches a constant velocity where the net force becomes zero. This is calculated using Stokes' law: F = 6πηrv</li>
+            <li><strong>Poiseuille's Equation:</strong> Describes the volume flow rate through a cylindrical pipe: Q = (πPr⁴)/(8ηL), where P is pressure difference, r is radius, and L is length.</li>
+            <li><strong>Temperature Dependence:</strong> Viscosity of liquids decreases with temperature, while viscosity of gases increases with temperature.</li>
+        </ul>
+
+        <p>NEET exams frequently test terminal velocity problems where objects fall through glycerin or oil. The key is to recognize that at terminal velocity, weight equals drag force, and you must apply Stokes' law correctly.</p>
+
+        <h2>Surface Tension: Properties of Liquid Surfaces</h2>
+        
+        <p>Surface tension is the property of a liquid by which it appears to be covered with a stretched elastic membrane. It arises because molecules at the surface experience an unbalanced force, as they have neighbors only on one side (below), creating a net inward pull.</p>
+        
+        <p>Surface tension (T or γ) is defined as the force per unit length or energy per unit area:</p>
+        <p style="text-align: center; font-weight: 600; margin: 20px 0;">T = F/l = E/A (N/m or J/m²)</p>
+        
+        <p>Key phenomena related to surface tension include:</p>
+        <ul>
+            <li><strong>Capillarity:</strong> The rise or fall of liquid in a capillary tube occurs due to surface tension and adhesive forces. The height of capillary rise is given by: h = (2T cosθ)/(ρgr), where θ is the contact angle and r is the radius of the capillary.</li>
+            <li><strong>Pressure Difference Across Curved Surfaces:</strong> Young-Laplace equation gives the pressure difference: ΔP = 2T/r for a spherical drop or bubble.</li>
+            <li><strong>Angle of Contact:</strong> Determines whether a liquid wets a surface (θ < 90°) or doesn't wet (θ > 90°).</li>
+        </ul>
+
+        <p>NEET questions on surface tension often involve capillary rise calculations. Remember that mercury has a concave meniscus (high surface tension, doesn't wet glass), while water has a convex meniscus (wets glass). This distinction is crucial for solving problems correctly.</p>
+
+        <h2>Common NEET Exam Patterns and Problem-Solving Strategies</h2>
+        
+        <p>Based on the past five years of NEET papers, fluid mechanics questions follow predictable patterns:</p>
+        
+        <p><strong>Pattern 1: Bernoulli's Theorem Application (2-3 questions)</strong><br>
+        These typically involve calculating velocity, pressure, or flow rate in pipes with varying cross-sections. The approach is to identify two points, apply Bernoulli's equation, and solve for the unknown variable.</p>
+        
+        <p><strong>Pattern 2: Terminal Velocity Problems (1-2 questions)</strong><br>
+        A sphere or object falls through a viscous medium. Set up the force balance equation at terminal velocity and use Stokes' law. Watch for the difference between motion in air versus motion in a dense fluid.</p>
+        
+        <p><strong>Pattern 3: Capillary Rise Calculations (1-2 questions)</strong><br>
+        Usually asks for the height of rise in a capillary tube. Use the capillary rise formula, but ensure you account for the contact angle and identify whether the liquid wets the surface.</p>
+        
+        <p><strong>Pattern 4: Conceptual Questions</strong><br>
+        These test understanding of why phenomena occur. For example, why does water form spherical drops, or why does a curved needle float on water? These require conceptual clarity, not just formula application.</p>
+
+        <div class="cta-box">
+            <h3>Master Fluid Mechanics with Expert Guidance</h3>
+            <p>Struggling with Bernoulli's principle or viscosity problems? Get comprehensive coaching from Padhle AIM720, the #1 NEET Physics coaching program. Our expert instructors break down complex fluid mechanics concepts with proven strategies that have helped thousands of students score 180+ in Physics.</p>
+            <a href="/best-neet-coaching-2025.html" class="cta-button">Explore Padhle AIM720</a>
+        </div>
+
+        <p>To excel in fluid mechanics for NEET, practice numerical problems from NCERT exercises, supplementary materials, and previous years' question papers. Focus on understanding the physical principles behind each equation rather than memorizing formulas. This approach will help you tackle variations of questions that may appear in your exam.</p>
+        
+        <p>Remember that fluid mechanics forms the foundation for understanding many real-world applications. By mastering Bernoulli's principle, viscosity, and surface tension, you're not only preparing for NEET but also building strong physics fundamentals that will serve you well in your medical career.</p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 NEETSuccess. All rights reserved.</p>
+            <p style="margin-top: 15px;">Prepare with confidence using Padhle AIM720 - the #1
