@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Analyse NEET Mock Tests to Jump 80-100 Marks | NEETSuccess</title>
+    <meta name="description" content="Master NEET mock test analysis with strategic breakdowns. Learn to identify weak areas, optimize time management, and boost your score by 80-100 marks effectively.">
+    <link rel="canonical" href="https://neetsuccess.com/neet-mock-test-analysis.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2d3748;
+            line-height: 1.6;
+            background-color: #f8fafc;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2d3748;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e8a020;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background-color: #e8a020;
+            color: #0C1B33;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .article-date {
+            color: #cbd5e0;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Article Container */
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            background-color: white;
+        }
+
+        .article-content {
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .article-content h2 {
+            color: #0C1B33;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+            border-bottom: 3px solid #e8a020;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+            color: #1A2F52;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .article-content p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .article-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.6rem;
+            list-style-type: disc;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 5px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #0C1B33;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box p {
+            color: #2d3748;
+            margin-bottom: 0;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #e8a020;
+            color: #0C1B33;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #d69018;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        footer strong {
+            color: #e8a020;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .article-container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/strategy.html">Strategy</a></li>
+            <li><a href="/motivation.html">Motivation</a></li>
+            <li><a href="/best-neet-coaching-2025.html">Best Coaching</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <span class="subject-badge">Strategy</span>
+            <h1>How to Analyse NEET Mock Tests to Jump 80-100 Marks</h1>
+            <p class="article-date">Published on July 24, 2026</p>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <div class="article-content">
+            <p>
+                Mock test analysis is the bridge between practice and performance. Most NEET aspirants complete mock tests religiously, but very few actually extract maximum value from them. If you've been taking tests without a structured analysis approach, you're leaving 80-100 marks on the table. This comprehensive guide will show you exactly how to analyze your NEET mock tests like a champion and convert those insights into tangible score improvements.
+            </p>
+
+            <h2>1. The Three-Layer Analysis Framework</h2>
+            
+            <p>
+                Effective mock test analysis isn't about just checking answers; it's about creating a diagnostic system that identifies patterns in your weaknesses. The NEET exam tests three subjects—Physics, Chemistry, and Biology—across 180 questions in 3 hours. Your analysis must be equally structured.
+            </p>
+
+            <h3>Layer 1: Immediate Post-Test Review (Same Day)</h3>
+            <p>
+                Within 2-3 hours of completing a mock test, review only the <strong>questions you left blank or answered with low confidence</strong>. This is when your memory is fresh and your frustration points are obvious. For each question:
+            </p>
+            <ul>
+                <li>Identify which chapter it belongs to (e.g., Thermodynamics from Physics, Coordination Compounds from Chemistry)</li>
+                <li>Note whether you skipped it due to time pressure or conceptual confusion</li>
+                <li>Mark if it's from your "weak chapter" list</li>
+            </ul>
+
+            <p>
+                According to NCERT Physics standards and recent NEET patterns, questions on Nuclear Physics, Ray Optics, and Electromagnetic Induction consistently appear with 4-5 questions each. If you're missing these chapters, you're potentially losing 20+ marks directly.
+            </p>
+
+            <h3>Layer 2: Subject-Wise Breakdown (Next Day)</h3>
+            <p>
+                Create a spreadsheet with the following columns:
+            </p>
+            <ul>
+                <li><strong>Chapter Name</strong> – The NCERT chapter reference</li>
+                <li><strong>Questions Attempted</strong> – Total count</li>
+                <li><strong>Questions Correct</strong> – Accuracy percentage</li>
+                <li><strong>Time per Question</strong> – Average seconds spent</li>
+                <li><strong>Confidence Level</strong> – High/Medium/Low</li>
+                <li><strong>Error Type</strong> – Conceptual/Calculation/Time management</li>
+            </ul>
+
+            <p>
+                This breakdown is crucial for NEET because each subject has distinct characteristics. In Biology, especially Botany and Zoology from NCERT Class 11-12, questions often test direct recall. Missing these indicates insufficient revision, not weak concepts. In Chemistry, particularly from Organic Chemistry (Reactions and Mechanisms), you need deeper understanding. In Physics, conceptual clarity and problem-solving speed are equally important.
+            </p>
+
+            <div class="highlight-box">
+                <h4>⭐ Key Insight for Score Jump</h4>
+                <p>
+                    If you're scoring 200-300 out of 720, your immediate priority should be achieving 70%+ accuracy in easy to medium chapters before attempting hard chapters. Target chapters like Botany (Photosynthesis, Respiration), General Organic Chemistry, and Kinematics first. A 10-15 mark jump here is faster than a 5 mark jump from difficult chapters.
+                </p>
+            </div>
+
+            <h2>2. Identifying Your Error Patterns (The Game-Changer)</h2>
+
+            <p>
+                This is where 80-100 mark improvements come from. Not all wrong answers are created equal. Categorizing your errors scientifically reveals your true bottlenecks.
+            </p>
+
+            <h3>The Four Error Categories in NEET</h3>
+
+            <ul>
+                <li><strong>Conceptual Errors:</strong> You attempted the question but your fundamental understanding was wrong. Example: Misunderstanding the principle of superposition in Physics or the mechanism of nucleophilic addition in Organic Chemistry.</li>
+                
+                <li><strong>Calculation Errors:</strong> Your approach was correct, but you made arithmetic mistakes or unit conversion errors. This is common in Physical Chemistry (Molarity, Molality problems) and Mechanics.</li>
+                
+                <li><strong>Misreading/Careless Errors:</strong> You understood the concept but misread the question or marked the wrong option. These are the easiest to fix and can collectively yield 15-20 marks.</li>
+                
+                <li><strong>Time Management Errors:</strong> You didn't attempt or rushed through questions due to poor time allocation. In NEET, this often happens with lengthy passages in Reading Comprehension-style questions in Biology.</li>
+            </ul>
+
+            <p>
+                Track these errors for 3-4 mock tests. If you find that 40% of your errors are "Misreading," you have a quick win: slow down, read each option twice. If 60% are "Conceptual," you need deeper chapter revision before taking more mocks.
+            </p>
+
+            <h2>3. Time Analysis and Speed Optimization</h2>
+
+            <p>
+                NEET allows 180 seconds per question on average (540 minutes ÷ 180 questions). However, smart test-takers don't follow this evenly. Questions in NEET vary wildly in difficulty and reading length.
+            </p>
+
+            <h3>Subject-Specific Time Benchmarks:</h3>
+            <ul>
+                <li><strong>Physics:</strong> Conceptual questions (40-60 sec), Calculation-heavy (90-120 sec)</li>
+                <li><strong>Chemistry:</strong> Inorganic MCQs (20-40 sec), Organic synthesis (90-150 sec)</li>
+                <li><strong>Biology:</strong> Direct recall questions (15-30 sec), Long-passage based (60-90 sec)</li>
+            </ul>
+
+            <p>
+                Review your mock tests with this lens: Are you spending 4 minutes on a straightforward Botany question that should take 30 seconds? Are you rushing through Organic Chemistry problems in 2 minutes? This analysis alone can free up 20-30 minutes per test, allowing you to attempt 10-15 additional questions—potentially worth 40-60 marks if your accuracy is 60-70%.
+            </p>
+
+            <div class="highlight-box">
+                <h4>⭐ Pro Tip: The 2-Pass Strategy</h4>
+                <p>
+                    In your next mock test, use a two-pass approach: Pass 1 (40 min per subject) – Attempt only questions you can solve in under 60 seconds. Pass 2 (50 min per subject) – Tackle medium-difficulty questions. Pass 3 (final 10 min) – Revisit skipped hard questions only if you have time. This often yields 20-30 more marks than a linear approach.
+                </p>
+            </div>
+
+            <h2>4. Creating Your Personalized Improvement Plan</h2>
+
+            <p>
+                After analyzing 2-3 mock tests, you should have clear data on:
+            </p>
+            <ul>
+                <li>Your top 3-5 weak chapters (measured by accuracy and frequency of errors)</li>
+                <li>Your most common error types</li>
+                <li>Chapters where you're fast but inaccurate vs. slow but accurate</li>
+            </ul>
+
+            <p>
+                Your improvement plan should be laser-focused. If your analysis shows you're losing 15 marks in Coordinate Geometry (Physics), 12 marks in P-block Elements (Chemistry), and 18 marks in Genetics (Biology), these three chapters are your 45-mark opportunity. Revision + targeted practice on these alone can yield a 50-70 mark jump.
+            </p>
+
+            <p>
+                Additionally, NEET question patterns repeat thematically. If your mock test analysis shows you're weak in "Organic Chemistry Reactions," look at previous year NEET papers—you'll notice 3-4
