@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid State Chemistry for NEET: Crystal Systems, Defects and PYQs | NEETSuccess</title>
+    <meta name="description" content="Master NEET Chemistry: Learn crystal systems, types of defects, unit cells & more with NCERT-based content and previous year questions.">
+    <link rel="canonical" href="https://neetsuccess.com/neet-chemistry-solid-state.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #E8A020;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background: rgba(232, 160, 32, 0.2);
+            border: 1px solid #E8A020;
+            color: #FFD700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-date {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+        }
+
+        /* Article Container */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .article-container h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1rem 0;
+            color: #0C1B33;
+            border-bottom: 3px solid #E8A020;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-container p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .article-container ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .article-container li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
+        .article-container strong {
+            color: #0C1B33;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h3 {
+            color: #E8A020;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .highlight-box p {
+            color: #333;
+            margin: 0;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: rgba(255,255,255,0.95);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #E8A020;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background: #D18500;
+        }
+
+        /* Footer */
+        footer {
+            background: #0C1B33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        table th {
+            background: #0C1B33;
+            color: white;
+            padding: 0.8rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        table td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+        }
+
+        table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/strategy.html">Strategy</a></li>
+            <li><a href="/motivation.html">Motivation</a></li>
+            <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="subject-badge">Chemistry</span>
+        <h1>Solid State Chemistry for NEET: Crystal Systems, Defects and PYQs</h1>
+        <p class="hero-date">Published on July 25, 2026</p>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <p><strong>Solid State Chemistry</strong> is a crucial chapter in NEET Chemistry that consistently appears in the exam with 2-4 questions. This chapter bridges inorganic and physical chemistry, testing your understanding of crystal structures, imperfections, and their practical applications. With the right strategy and NCERT-grounded preparation, you can score full marks in this section.</p>
+
+        <h2>Crystal Systems and Unit Cells: The Foundation</h2>
+
+        <p>The NEET curriculum (Class 12, NCERT Chemistry Part 1) dedicates substantial content to crystal systems and unit cells. A crystal system is a geometric arrangement of atoms or ions in a 3D lattice, defined by six parameters: three edge lengths (a, b, c) and three angles (α, β, γ).</p>
+
+        <p>There are <strong>seven crystal systems</strong> in total:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Crystal System</th>
+                    <th>Edge Lengths</th>
+                    <th>Angles</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cubic</td>
+                    <td>a = b = c</td>
+                    <td>α = β = γ = 90°</td>
+                    <td>NaCl, CsCl</td>
+                </tr>
+                <tr>
+                    <td>Tetragonal</td>
+                    <td>a = b ≠ c</td>
+                    <td>α = β = γ = 90°</td>
+                    <td>SnO₂</td>
+                </tr>
+                <tr>
+                    <td>Orthorhombic</td>
+                    <td>a ≠ b ≠ c</td>
+                    <td>α = β = γ = 90°</td>
+                    <td>KNO₃</td>
+                </tr>
+                <tr>
+                    <td>Trigonal</td>
+                    <td>a = b = c</td>
+                    <td>α = β = γ ≠ 90°</td>
+                    <td>CaCO₃</td>
+                </tr>
+                <tr>
+                    <td>Hexagonal</td>
+                    <td>a = b ≠ c</td>
+                    <td>α = β = 90°, γ = 120°</td>
+                    <td>Graphite, Ice</td>
+                </tr>
+                <tr>
+                    <td>Monoclinic</td>
+                    <td>a ≠ b ≠ c</td>
+                    <td>α = γ = 90°, β ≠ 90°</td>
+                    <td>Sucrose</td>
+                </tr>
+                <tr>
+                    <td>Triclinic</td>
+                    <td>a ≠ b ≠ c</td>
+                    <td>α ≠ β ≠ γ</td>
+                    <td>K₂Cr₂O₇</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Unit cells</strong> are the smallest repeating units of a crystal lattice. NEET focuses heavily on <strong>cubic unit cells</strong> because they're most common and easiest to visualize. There are three types of cubic unit cells:</p>
+
+        <ul>
+            <li><strong>Simple Cubic (SC):</strong> Atoms at corners only. Coordination number = 6, Z = 1</li>
+            <li><strong>Body-Centered Cubic (BCC):</strong> Atoms at corners + 1 at center. Coordination number = 8, Z = 2 (e.g., Fe, Cr)</li>
+            <li><strong>Face-Centered Cubic (FCC):</strong> Atoms at corners + 1 on each face. Coordination number = 12, Z = 4 (e.g., Cu, Al, Au)</li>
+        </ul>
+
+        <p>A critical calculation that appears frequently in PYQs involves finding the relationship between edge length (a), atomic radius (r), and density. For FCC: a = 2√2 × r. These formulas are essential for solving numerical problems.</p>
+
+        <div class="highlight-box">
+            <h3>⭐ Key NEET Tip</h3>
+            <p>Always remember: Z (atoms per unit cell) × Molar Mass / (Avogadro's number × Unit cell volume) = Density. This formula solves 90% of unit cell numerical questions in NEET. Practice with CsCl (BCC) and NaCl (FCC) structures first.</p>
+        </div>
+
+        <h2>Crystal Defects: Imperfections That Matter</h2>
+
+        <p>This is where many students lose marks. NCERT emphasizes that real crystals are never perfect—they contain <strong>defects</strong> that affect properties like conductivity, color, and mechanical strength.</p>
+
+        <p>Crystal defects are classified into two main types:</p>
+
+        <h3 style="font-size: 1.2rem; margin-top: 1.5rem; color: #0C1B33;">1. Point Defects (Atomic Scale)</h3>
+
+        <ul>
+            <li><strong>Vacancy Defect:</strong> Missing atom/ion in the lattice. Reduces density. Example: In AgCl crystals</li>
+            <li><strong>Interstitial Defect:</strong> Extra atom/ion squeezed between lattice points. Increases density. Example: Carbon in iron (steel hardening)</li>
+            <li><strong>Frenkel Defect:</strong> Cation leaves its position and occupies an interstitial site. Common in AgCl, AgBr. Density remains unchanged</li>
+            <li><strong>Schottky Defect:</strong> Equal number of cation and anion vacancies to maintain charge neutrality. Decreases density. Common in NaCl, CsCl</li>
+            <li><strong>Color Centers (F-centers):</strong> Anion vacancy with one or more electrons trapped. Causes color (e.g., blue color in KCl irradiated with Cl₂)</li>
+        </ul>
+
+        <h3 style="font-size: 1.2rem; margin-top: 1.5rem; color: #0C1B33;">2. Line Defects</h3>
+
+        <p>Dislocations in the crystal that extend in one direction. Important for mechanical properties but less frequently tested in NEET compared to point defects.</p>
+
+        <p>In recent NEET papers (2023, 2024), questions have asked students to identify defect types from density changes or to explain color development in ionic crystals. Always correlate defects with observable properties.</p>
+
+        <h2>Exam Patterns and Previous Year Questions (PYQs)</h2>
+
+        <p>Analysis of NEET Chemistry papers from 2019-2025 reveals consistent question patterns in Solid State Chemistry:</p>
+
+        <ul>
+            <li><strong>Numerical Problems (40%):</strong> Calculate density, atomic radius, or edge length using unit cell formulas. Typically 1 question per exam</li>
+            <li><strong>Crystal Structure Identification (30%):</strong> Match compounds to crystal systems (e.g., "NaCl has _____ crystal structure"). Usually 1-2 questions</li>
+            <li><strong>Defect Recognition (20%):</strong> Identify defect types from descriptions or property changes.
