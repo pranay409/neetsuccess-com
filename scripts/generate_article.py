@@ -11,6 +11,12 @@ import sys
 import random
 from datetime import datetime
 
+sys.path.insert(0, os.path.dirname(__file__))
+import seo_utils as su
+
+DOMAIN = "neetsuccess.com"
+SITE_NAME = "NEETSuccess"
+
 AUTHORS = ["Ananya Sharma", "Rohan Verma", "Priya Nair", "Arjun Mehta", "Sneha Iyer", "Karan Malhotra", "Divya Reddy", "Aditya Joshi"]
 
 def add_byline(html, today_display):
@@ -146,30 +152,6 @@ def generate_article_html(topic):
     return html.strip()
 
 
-def update_sitemap(slug, today_str):
-    path = "sitemap.xml"
-    if not os.path.exists(path):
-        print("sitemap.xml not found, skipping.")
-        return
-    with open(path, "r", encoding="utf-8") as f:
-        content = f.read()
-    if f"/{slug}.html" in content:
-        print(f"{slug} already in sitemap.")
-        return
-    entry = (
-        "  <url>\n"
-        f"    <loc>https://neetsuccess.com/{slug}.html</loc>\n"
-        f"    <lastmod>{today_str}</lastmod>\n"
-        "    <changefreq>monthly</changefreq>\n"
-        "    <priority>0.75</priority>\n"
-        "  </url>"
-    )
-    content = content.replace("</urlset>", entry + "\n</urlset>")
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
-    print(f"Sitemap updated with {slug}")
-
-
 def main():
     if not os.environ.get("ANTHROPIC_API_KEY"):
         print("ERROR: ANTHROPIC_API_KEY not set.")
@@ -190,11 +172,20 @@ def main():
     html = generate_article_html(topic)
     html = add_byline(html, datetime.now().strftime("%B %d, %Y"))
 
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"Saved {filename} ({len(html):,} bytes)")
+    url = f"https://{DOMAIN}/{filename}"
+    title = topic["title"]
+    description = su.extract_description(html, title)
 
-    update_sitemap(topic["slug"], today_str)
+    tagged_html = su.publish_article(
+        article_html=html, site_name=SITE_NAME, domain=DOMAIN,
+        canonical_url=url, title=title, description=description,
+        date_iso=today_str, category=topic["subject"],
+    )
+
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(tagged_html)
+    print(f"Saved {filename} ({len(tagged_html):,} bytes)")
+    print("SEO tags injected, manifest/sitemap/homepage/archive rebuilt")
     print("Done!")
 
 
