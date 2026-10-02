@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecular Basis of Inheritance for NEET: DNA, RNA and Gene Expression Explained | NEETSuccess</title>
+    <meta name="description" content="Master molecular basis of inheritance for NEET: DNA replication, RNA transcription, gene expression & protein synthesis explained with exam tips.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #0C1B33;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0C1B33;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background: rgba(232, 160, 32, 0.2);
+            border: 1px solid #E8A020;
+            color: #E8A020;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero-date {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            margin-top: 1.5rem;
+        }
+
+        .article-container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .article-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: #444;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .article-content h2 {
+            font-size: 1.8rem;
+            color: #0C1B33;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #1A2F52;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .article-content ul, .article-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.8rem;
+            color: #444;
+        }
+
+        .article-content strong {
+            color: #0C1B33;
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #E8A020;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight-box p {
+            color: #333;
+            margin: 0;
+        }
+
+        .cta-box {
+            background: #0C1B33;
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+
+        .cta-box p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #E8A020;
+            color: #0C1B33;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #d4901a;
+        }
+
+        footer {
+            background: #0C1B33;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .exam-pattern {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .exam-pattern strong {
+            color: #0C1B33;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .header-container {
+                padding: 0 1rem;
+            }
+
+            .article-container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://neetsuccess.com/neet-biology-molecular-basis-inheritance.html">
+<meta property="og:title" content="Molecular Basis of Inheritance for NEET: DNA, RNA and Gene Expression Explained">
+<meta property="og:description" content="Master molecular basis of inheritance for NEET: DNA replication, RNA transcription, gene expression &amp; protein synthesis explained with exam tips.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://neetsuccess.com/neet-biology-molecular-basis-inheritance.html">
+<meta property="og:site_name" content="NEETSuccess">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Molecular Basis of Inheritance for NEET: DNA, RNA and Gene Expression Explained">
+<meta name="twitter:description" content="Master molecular basis of inheritance for NEET: DNA replication, RNA transcription, gene expression &amp; protein synthesis explained with exam tips.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Molecular Basis of Inheritance for NEET: DNA, RNA and Gene Expression Explained", "description": "Master molecular basis of inheritance for NEET: DNA replication, RNA transcription, gene expression & protein synthesis explained with exam tips.", "datePublished": "2026-10-02", "dateModified": "2026-10-02", "author": {"@type": "Organization", "name": "NEETSuccess"}, "publisher": {"@type": "Organization", "name": "NEETSuccess"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://neetsuccess.com/neet-biology-molecular-basis-inheritance.html"}, "articleSection": "Biology"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://neet.padhle.in" style="color:#E8A020;text-decoration:none;font-weight:600;">Aditya Joshi</a> &middot; 📅 October 02, 2026</div>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">NEETSuccess</a>
+            <nav>
+                <ul>
+                    <li><a href="/strategy.html">Strategy</a></li>
+                    <li><a href="/motivation.html">Motivation</a></li>
+                    <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="subject-badge">Biology</div>
+            <h1>Molecular Basis of Inheritance for NEET: DNA, RNA and Gene Expression Explained</h1>
+            <div class="hero-date">October 02, 2026</div>
+        </div>
+    </section>
+
+    <div class="article-container">
+        <article class="article-content">
+            <p>The molecular basis of inheritance is one of the most fundamental yet complex topics in NEET Biology. Understanding how genetic information is stored, replicated, transcribed, and expressed is crucial for scoring well in this chapter. This comprehensive guide breaks down DNA, RNA, and gene expression mechanisms according to NCERT standards while keeping exam patterns in focus.</p>
+
+            <h2>DNA Structure and Replication (NCERT Chapter 6)</h2>
+
+            <p>DNA (deoxyribonucleic acid) is the molecule that carries genetic instructions for all living organisms. The structure of DNA was determined by Watson and Crick in 1953, and it follows the double helix model with complementary base pairing.</p>
+
+            <h3>Key Components of DNA:</h3>
+            <ul>
+                <li><strong>Sugar:</strong> Deoxyribose (5-carbon sugar)</li>
+                <li><strong>Phosphate Groups:</strong> Form the backbone of DNA strands</li>
+                <li><strong>Nitrogenous Bases:</strong> Adenine (A), Guanine (G), Cytosine (C), Thymine (T)</li>
+            </ul>
+
+            <h3>DNA Replication Process:</h3>
+            <p>DNA replication is <strong>semi-conservative</strong>, as proposed by Meselson and Stahl. This means each new DNA molecule consists of one original strand and one newly synthesized strand.</p>
+
+            <p><strong>Steps in DNA Replication:</strong></p>
+            <ol>
+                <li><strong>Initiation:</strong> DNA helicase unwinds the double helix at the origin of replication</li>
+                <li><strong>Elongation:</strong> DNA polymerase III adds nucleotides complementary to the template strand</li>
+                <li><strong>Termination:</strong> DNA polymerase I removes RNA primers and fills gaps; DNA ligase seals nicks</li>
+            </ol>
+
+            <div class="exam-pattern">
+                <strong>📌 Exam Pattern Alert:</strong> NEET frequently asks about semi-conservative replication, DNA polymerase functions, and the differences between leading and lagging strands. Expect 1-2 questions on DNA replication mechanisms.
+            </div>
+
+            <h2>Transcription and RNA Synthesis (NCERT Chapter 6)</h2>
+
+            <p>Transcription is the process where genetic information from DNA is copied into RNA. This occurs in the nucleus in eukaryotes and is catalyzed by RNA polymerase.</p>
+
+            <h3>Types of RNA:</h3>
+            <ul>
+                <li><strong>mRNA (Messenger RNA):</strong> Carries genetic code from DNA to ribosomes</li>
+                <li><strong>tRNA (Transfer RNA):</strong> Brings amino acids to the ribosome during translation</li>
+                <li><strong>rRNA (Ribosomal RNA):</strong> Component of ribosomes that catalyzes peptide bond formation</li>
+            </ul>
+
+            <h3>Transcription Mechanism:</h3>
+            <p>In eukaryotes, <strong>RNA polymerase II</strong> transcribes protein-coding genes. The process involves three stages:</p>
+            <ol>
+                <li><strong>Initiation:</strong> RNA polymerase binds to promoter region (TATA box in eukaryotes)</li>
+                <li><strong>Elongation:</strong> RNA polymerase moves along the template DNA strand, adding complementary nucleotides</li>
+                <li><strong>Termination:</strong> Transcription stops at termination signals</li>
+            </ol>
+
+            <h3>Post-transcriptional Modifications in Eukaryotes:</h3>
+            <p>After transcription, mRNA undergoes important modifications:</p>
+            <ul>
+                <li><strong>5' Capping:</strong> Addition of 7-methylguanosine cap for stability and translation initiation</li>
+                <li><strong>3' Polyadenylation:</strong> Addition of poly-A tail (200+ adenine nucleotides) for stability</li>
+                <li><strong>Splicing:</strong> Removal of introns and joining of exons to produce mature mRNA</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>💡 Key Exam Tip</h4>
+                <p>Remember that in prokaryotes, transcription and translation occur simultaneously (no post-transcriptional modifications), while in eukaryotes, transcription occurs in the nucleus and translation in the cytoplasm. This distinction appears frequently in NEET questions.</p>
+            </div>
+
+            <h2>Gene Expression and Translation (NCERT Chapter 7)</h2>
+
+            <p>Gene expression is the process where genetic information is converted into functional proteins. Translation is the second major step where mRNA is decoded by ribosomes to synthesize proteins.</p>
+
+            <h3>The Genetic Code:</h3>
+            <p>The genetic code is the set of rules that translates mRNA sequences into amino acids. Key features:</p>
+            <ul>
+                <li><strong>Triplet Code:</strong> Each codon consists of 3 nucleotides specifying one amino acid</li>
+                <li><strong>Degenerate/Redundant:</strong> Multiple codons can code for the same amino acid (64 codons code for 20 amino acids)</li>
+                <li><strong>Universal:</strong> Nearly identical across all organisms</li>
+                <li><strong>Non-overlapping:</strong> Codons are read sequentially without overlap</li>
+                <li><strong>Comma-less:</strong> No spacing between codons</li>
+            </ul>
+
+            <h3>Translation Process:</h3>
+            <p>Translation occurs on ribosomes and involves three stages:</p>
+
+            <h3>1. Initiation:</h3>
+            <p>The ribosome assembles on the mRNA at the start codon (AUG). In prokaryotes, formyl-methionine (fMet) is the first amino acid. In eukaryotes, methionine is the first amino acid. Initiation factors facilitate this process.</p>
+
+            <h3>2. Elongation:</h3>
+            <p>The ribosome moves along the mRNA, and tRNA molecules bring appropriate amino acids. Each tRNA has an anticodon that matches the codon on mRNA. Peptide bonds form between adjacent amino acids through the catalytic action of rRNA (ribozyme activity).</p>
+
+            <h3>3. Termination:</h3>
+            <p>When the ribosome reaches a stop codon (UAA, UAG, UGA), release factors bind, and the polypeptide chain is released from the tRNA.</p>
+
+            <div class="exam-pattern">
+                <strong>📌 Exam Pattern Alert:</strong> NEET asks detailed questions about the genetic code properties, codon-anticodon pairing, and the exact sequence of events during translation. One to three questions typically appear from this section annually.
+            </div>
+
+            <h2>Gene Regulation and Expression Control (NCERT Chapter 7)</h2>
+
+            <p>Gene regulation is crucial for controlling when and how much protein is produced from a gene. The classic example is the lac operon in prokaryotes.</p>
+
+            <h3>The Lac
