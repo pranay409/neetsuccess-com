@@ -6,6 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://neetsuccess.com/neet-biology-neural-control.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://neetsuccess.com/neet-biology-excretory-products.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -312,8 +318,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neetsuccess.com/neet-biology-neural-control.html</loc>
-    <lastmod>2026-10-05</lastmod>
+    <loc>https://neetsuccess.com/neet-biology-chemical-coordination.html</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
