@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work, Energy and Power for NEET: Formulas and Frequently Asked Questions | NEETSuccess</title>
+    <meta name="description" content="Master Work, Energy and Power for NEET with comprehensive formulas, solved examples, and FAQs. NCERT-based physics guide for exam success.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #0C1B33;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #E8A020;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(232, 160, 32, 0.1);
+            border-radius: 50%;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: #E8A020;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero-date {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        article {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: #0C1B33;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #E8A020;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #1A2F52;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.6rem;
+        }
+        
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box strong {
+            color: #E8A020;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #E8A020;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #d68910;
+        }
+        
+        .formula-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .formula-card {
+            background-color: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 3px solid #E8A020;
+        }
+        
+        .formula-card strong {
+            color: #0C1B33;
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+        
+        .formula-card code {
+            background-color: #e8e8e8;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #333;
+        }
+        
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+        
+        .footer-highlight {
+            color: #E8A020;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            .formula-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            article {
+                padding: 1.5rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://neetsuccess.com/neet-physics-work-energy-power.html">
+<meta property="og:title" content="Work, Energy and Power for NEET: Formulas and Frequently Asked Questions">
+<meta property="og:description" content="Master Work, Energy and Power for NEET with comprehensive formulas, solved examples, and FAQs. NCERT-based physics guide for exam success.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://neetsuccess.com/neet-physics-work-energy-power.html">
+<meta property="og:site_name" content="NEETSuccess">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Work, Energy and Power for NEET: Formulas and Frequently Asked Questions">
+<meta name="twitter:description" content="Master Work, Energy and Power for NEET with comprehensive formulas, solved examples, and FAQs. NCERT-based physics guide for exam success.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Work, Energy and Power for NEET: Formulas and Frequently Asked Questions", "description": "Master Work, Energy and Power for NEET with comprehensive formulas, solved examples, and FAQs. NCERT-based physics guide for exam success.", "datePublished": "2026-10-14", "dateModified": "2026-10-14", "author": {"@type": "Organization", "name": "NEETSuccess"}, "publisher": {"@type": "Organization", "name": "NEETSuccess"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://neetsuccess.com/neet-physics-work-energy-power.html"}, "articleSection": "Physics"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://neet.padhle.in" style="color:#E8A020;text-decoration:none;font-weight:600;">Aditya Joshi</a> &middot; 📅 October 14, 2026</div>
+    <header>
+        <nav>
+            <div class="logo">NEETSuccess</div>
+            <ul>
+                <li><a href="/strategy.html">Strategy</a></li>
+                <li><a href="/motivation.html">Motivation</a></li>
+                <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subject-badge">Physics</span>
+            <h1>Work, Energy and Power for NEET: Formulas and Frequently Asked Questions</h1>
+            <p class="hero-date">Published on October 14, 2026</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <article>
+            <p>Work, Energy and Power form one of the most fundamental chapters in NEET Physics. This topic, covered extensively in NCERT Class 11 Physics, is crucial for understanding mechanical systems and has a consistent presence in the NEET exam. Students often find this chapter conceptually challenging, yet mastering it opens doors to understanding advanced topics like rotational motion and thermodynamics. In this comprehensive guide, we'll break down every concept, formula, and frequently asked question to help you score maximum marks.</p>
+
+            <h2>Understanding Work: Definition and Applications (NCERT 6.1-6.3)</h2>
+            
+            <p>Work is defined as the product of force and displacement in the direction of that force. Mathematically, <strong>W = F·d·cos(θ)</strong>, where θ is the angle between force and displacement vectors. This seemingly simple definition carries profound implications for solving complex physics problems.</p>
+            
+            <p>In NEET, work problems typically fall into three categories:</p>
+            <ul>
+                <li><strong>Constant Force:</strong> When force remains constant throughout motion, W = Fd cos(θ)</li>
+                <li><strong>Variable Force:</strong> When force changes with position, W = ∫F·ds</li>
+                <li><strong>Multiple Forces:</strong> Net work equals sum of work done by individual forces</li>
+            </ul>
+
+            <p>The sign convention is critical. Positive work indicates energy transfer to the system, negative work indicates energy withdrawal. Zero work occurs when force is perpendicular to displacement—a common trick in NEET questions. For instance, tension in circular motion does zero work because it's always perpendicular to velocity.</p>
+
+            <div class="highlight-box">
+                <strong>Key Tip for NEET Success:</strong> Always identify the angle between force and displacement carefully. Many students lose marks by assuming force and displacement are parallel when they're not. Draw force diagrams and resolve forces when necessary. Remember: W = 0 when θ = 90°, which appears in nearly 15-20% of NEET work questions.
+            </div>
+
+            <h2>Energy Conservation and Mechanical Energy (NCERT 6.4-6.6)</h2>
+
+            <p>Energy is the capacity to do work. NEET emphasizes two primary forms: kinetic energy (KE) and potential energy (PE). The relationship between work and kinetic energy is captured by the Work-Energy Theorem: <strong>W_net = ΔKE = ½m(v_f² - v_i²)</strong></p>
+
+            <p>This theorem is invaluable for solving problems without needing to find acceleration. Similarly, gravitational potential energy is <strong>PE = mgh</strong> (taking reference at ground level), and elastic potential energy is <strong>PE = ½kx²</strong> for a spring.</p>
+
+            <p>The Conservation of Mechanical Energy states: <strong>KE + PE = constant</strong> (in absence of non-conservative forces). When friction or air resistance acts, mechanical energy decreases:</p>
+            <ul>
+                <li>Initial Mechanical Energy = Final Mechanical Energy + Energy lost to friction</li>
+                <li>This distinction is tested extensively in NEET through multi-step problems</li>
+                <li>Collision problems often combine energy conservation with momentum conservation</li>
+            </ul>
+
+            <div class="formula-grid">
+                <div class="formula-card">
+                    <strong>Kinetic Energy</strong>
+                    <code>KE = ½mv²</code>
+                </div>
+                <div class="formula-card">
+                    <strong>Gravitational PE</strong>
+                    <code>PE = mgh</code>
+                </div>
+                <div class="formula-card">
+                    <strong>Elastic PE (Spring)</strong>
+                    <code>PE = ½kx²</code>
+                </div>
+                <div class="formula-card">
+                    <strong>Work-Energy Theorem</strong>
+                    <code>W_net = ΔKE</code>
+                </div>
+            </div>
+
+            <h2>Power: Rate of Energy Transfer (NCERT 6.7)</h2>
+
+            <p>Power is the rate at which work is done. Defined as <strong>P = W/t</strong>, it tells us how quickly energy is transferred. The instantaneous power is <strong>P = F·v·cos(θ)</strong>, where v is instantaneous velocity. This formula is crucial in NEET because it connects force, velocity, and power—three fundamental quantities often tested together.</p>
+
+            <p>Power measurement units vary: Watts (W = J/s), kilowatts (kW), and horsepower (1 HP ≈ 746 W) frequently appear in NEET questions. Average power is calculated as total work divided by total time, while instantaneous power requires differentiation:</p>
+            <p><strong>P = dW/dt = F·v</strong></p>
+
+            <p>NEET often tests power in contexts of:</p>
+            <ul>
+                <li>Lifting objects against gravity: P = mgv (when moving at constant velocity)</li>
+                <li>Vehicle engines maintaining constant velocity: P = Fv where F overcomes friction</li>
+                <li>Electrical power consumption in physics problems</li>
+                <li>Energy efficiency calculations: Efficiency = (Useful Power Output / Total Power Input) × 100%</li>
+            </ul>
+
+            <h2>Common NEET Question Patterns and Solutions (NCERT Integration)</h2>
+
+            <p>Based on NEET analysis from 2020-2025, certain question patterns dominate this chapter. Understanding these patterns accelerates your preparation significantly.</p>
+
+            <h3>Pattern 1: Inclined Plane Problems</h3>
+            <p>A block sliding down a frictionless incline is classic NEET territory. Students must identify the forces (gravity and normal reaction), recognize that normal reaction does zero work, and apply energy conservation to find final velocity. When friction is introduced, the work-energy theorem becomes essential: (mg sin θ - μmg cos θ)s = ½mv²</p>
+
+            <h3>Pattern 2: Collision and Energy Loss</h3>
+            <p>Elastic and inelastic collisions test both momentum and energy conservation simultaneously. In elastic collisions, kinetic energy is conserved; in inelastic collisions, some energy converts to heat and deformation. A common twist: finding the velocity of approach/separation ratio or maximum potential energy at the moment of maximum compression.</p>
+
+            <h3>Pattern 3: Spring and Oscillation Systems</h3>
+            <p>When a mass compresses a spring, all kinetic energy converts to elastic potential energy at maximum compression. The energy approach avoids the complexity of simple harmonic motion: ½mv₀² = ½kx_max²</p>
+
+            <h3>Pattern 4: Pulley Systems with Energy</h3>
+            <p>In Atwood machines and similar setups, energy conservation connects velocities of different objects. The constraint that both masses
