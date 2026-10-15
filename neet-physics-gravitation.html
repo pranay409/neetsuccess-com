@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitation for NEET: Kepler's Laws and Satellite Motion Explained | NEETSuccess</title>
+    <meta name="description" content="Master gravitation, Kepler's laws, and satellite motion for NEET. Complete guide with exam patterns, formulas, and high-yield concepts for NCERT Class 11.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 16px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0C1B33;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E8A020;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background: rgba(232, 160, 32, 0.2);
+            color: #E8A020;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .hero .date {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .main-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0C1B33;
+            margin: 40px 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #E8A020;
+            display: inline-block;
+        }
+
+        .main-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            color: #444;
+        }
+
+        .main-content ul, .main-content ol {
+            margin: 20px 0 20px 24px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .main-content li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: #FFF6E0;
+            border-left: 4px solid #E8A020;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h3 {
+            color: #0C1B33;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: #0C1B33;
+            color: white;
+            padding: 32px;
+            border-radius: 8px;
+            margin: 48px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .cta-box p {
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #E8A020;
+            color: #0C1B33;
+            padding: 12px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #D68A00;
+        }
+
+        /* Footer */
+        footer {
+            background: #0C1B33;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin-bottom: 12px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        footer strong {
+            color: #E8A020;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 16px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .main-content h2 {
+                font-size: 22px;
+            }
+
+            .hero {
+                padding: 50px 20px;
+            }
+
+            .main-content {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://neetsuccess.com/neet-physics-gravitation.html">
+<meta property="og:title" content="Gravitation for NEET: Kepler&#x27;s Laws and Satellite Motion Explained">
+<meta property="og:description" content="Master gravitation, Kepler&#x27;s laws, and satellite motion for NEET. Complete guide with exam patterns, formulas, and high-yield concepts for NCERT Class 11.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://neetsuccess.com/neet-physics-gravitation.html">
+<meta property="og:site_name" content="NEETSuccess">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gravitation for NEET: Kepler&#x27;s Laws and Satellite Motion Explained">
+<meta name="twitter:description" content="Master gravitation, Kepler&#x27;s laws, and satellite motion for NEET. Complete guide with exam patterns, formulas, and high-yield concepts for NCERT Class 11.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Gravitation for NEET: Kepler's Laws and Satellite Motion Explained", "description": "Master gravitation, Kepler's laws, and satellite motion for NEET. Complete guide with exam patterns, formulas, and high-yield concepts for NCERT Class 11.", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "author": {"@type": "Organization", "name": "NEETSuccess"}, "publisher": {"@type": "Organization", "name": "NEETSuccess"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://neetsuccess.com/neet-physics-gravitation.html"}, "articleSection": "Physics"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://neet.padhle.in" style="color:#E8A020;text-decoration:none;font-weight:600;">Ananya Sharma</a> &middot; 📅 October 15, 2026</div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">NEETSuccess</div>
+            <ul>
+                <li><a href="/strategy.html">Strategy</a></li>
+                <li><a href="/motivation.html">Motivation</a></li>
+                <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="subject-badge">Physics</div>
+            <h1>Gravitation for NEET: Kepler's Laws and Satellite Motion Explained</h1>
+            <p class="date">October 15, 2026</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="main-content">
+        <p>Gravitation is one of the most fundamental chapters in NEET Physics, carrying approximately 4-5% of the total weightage. Understanding Kepler's Laws and satellite motion is crucial not only for scoring well but also for developing a conceptual foundation in celestial mechanics. This comprehensive guide covers everything you need to master this chapter for your NEET exam.</p>
+
+        <h2>Newton's Law of Universal Gravitation and Gravitational Field</h2>
+
+        <p>The foundation of gravitation lies in Newton's Law of Universal Gravitation, which states that every particle attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.</p>
+
+        <p><strong>Mathematical Form:</strong> F = G(m₁m₂)/r²</p>
+
+        <p>Where G is the gravitational constant (6.67 × 10⁻¹¹ N⋅m²/kg²). NEET frequently tests the concept of gravitational field intensity (E = F/m = GM/r²) and potential energy calculations.</p>
+
+        <p><strong>Key Concepts Often Tested:</strong></p>
+        <ul>
+            <li>Variation of g with altitude: g = g₀(1 - 2h/R) for h << R</li>
+            <li>Variation of g with latitude due to Earth's rotation</li>
+            <li>Gravitational potential and equipotential surfaces</li>
+            <li>Escape velocity: v_escape = √(2GM/R)</li>
+        </ul>
+
+        <p>NEET questions often combine these concepts with energy conservation. For example, a satellite launched from Earth's surface gaining orbital velocity while accounting for rotational effects.</p>
+
+        <h2>Kepler's Laws: The Three Pillars of Planetary Motion</h2>
+
+        <p>Kepler's Laws describe the motion of planets around the Sun and are crucial for understanding how satellites orbit celestial bodies. These laws have appeared in almost every NEET exam in various forms.</p>
+
+        <p><strong>Kepler's First Law (Law of Orbits):</strong> All planets move in elliptical orbits with the Sun at one focus. For NEET, this establishes why circular orbits (a special case with eccentricity = 0) are used for simplified satellite calculations.</p>
+
+        <p><strong>Kepler's Second Law (Law of Areas):</strong> A line joining a planet and the Sun sweeps out equal areas in equal times. This leads to the concept of areal velocity, which remains constant throughout the orbit. Mathematically: dA/dt = L/(2m), where L is angular momentum.</p>
+
+        <p>This law explains why planets move faster at perihelion (closest point to Sun) and slower at aphelion (farthest point). NEET questions test this through conservation of angular momentum calculations.</p>
+
+        <p><strong>Kepler's Third Law (Law of Periods):</strong> The square of the orbital period is directly proportional to the cube of the semi-major axis: T² ∝ a³, or T² = (4π²/GM) × a³</p>
+
+        <p>This is the most frequently tested law in NEET. Common applications include:</p>
+        <ul>
+            <li>Comparing orbital periods of different satellites</li>
+            <li>Finding orbital radius from period</li>
+            <li>Determining satellite mass or central body mass</li>
+            <li>Understanding synchronous/geostationary satellites</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h3>⭐ Key Tip for NEET Success</h3>
+            <p>Always remember Kepler's Third Law in the form: T²/a³ = constant for all satellites orbiting the same central body. This ratio is independent of satellite mass—a common NEET trick question tries to confuse students on this point.</p>
+        </div>
+
+        <h2>Satellite Motion and Orbital Mechanics</h2>
+
+        <p>Satellite motion combines circular motion principles with gravitational force. For a satellite in circular orbit, gravitational force provides the centripetal force needed for circular motion.</p>
+
+        <p><strong>Orbital Velocity:</strong> Setting F_gravity = F_centripetal:</p>
+        <p>GMm/r² = mv²/r</p>
+        <p>Therefore: v_orbital = √(GM/r)</p>
+
+        <p>This shows that orbital velocity is independent of satellite mass—another high-frequency NEET concept. The velocity decreases with increasing orbital radius.</p>
+
+        <p><strong>Orbital Period:</strong> From T = 2πr/v, we derive T = 2π√(r³/GM), which is Kepler's Third Law in another form.</p>
+
+        <p><strong>Geostationary Satellites:</strong> These satellites have an orbital period equal to Earth's rotation period (24 hours) and remain fixed above one point on the equator. For Earth's geostationary satellite, the orbital radius is approximately 6.6R_E (where R_E is Earth's radius). NEET typically asks about height above Earth's surface: h ≈ 36,000 km.</p>
+
+        <p><strong>Types of Orbits by Energy:</strong></p>
+        <ul>
+            <li>Circular orbit: E = -GMm/(2r) (most stable)</li>
+            <li>Elliptical orbit: E = -GMm/(2a) (where a is semi-major axis)</li>
+            <li>Parabolic orbit: E = 0 (escape trajectory)</li>
+            <li>Hyperbolic orbit: E > 0 (unbound trajectory)</li>
+        </ul>
+
+        <p>Understanding these energy states is crucial for NEET questions involving orbital transfers and satellite launches from Earth.</p>
+
+        <h2>Common NEET Question Patterns and Problem-Solving Strategies</h2>
+
+        <p><strong>Pattern 1: Comparing Satellites Around the Same Body</strong></p>
+        <p>Use T₁²/T₂² = r₁³/r₂³ to compare periods and radii without needing absolute values.</p>
+
+        <p><strong>Pattern 2: Orbital Velocity Problems</strong></p>
+        <p>Remember that v = √(GM/r) and that the ratio of velocities can be found from radius ratios: v₁/v₂ = √(r₂/r₁)</p>
+
+        <p><strong>Pattern 3: Energy and Escape Velocity</strong></p>
+        <p>For orbit transfers, use energy conservation. The minimum velocity to escape from orbital height h is: v_escape = √(2GM/(R+h))</p>
+
+        <p><strong>Pattern 4: Geostationary Satellite Calculations</strong></p>
+        <p>These always use T = 24 hours. Combined with Kepler's Third Law, you can find the orbital radius or verify it's geostationary.</p>
+
+        <p>Practice with NCERT Class 11 Physics Chapter 8 (Gravitation) numerical problems repeatedly. Focus on problems involving orbital mechanics, energy calculations, and period comparisons. Most NEET questions are variations of NCERT textbook problems with different numerical values.</p>
+
+        <div class="cta-box">
+            <h3>Master Gravitation with Expert Guidance</h3>
+            <p>Get comprehensive video lessons, practice problems, and doubt-solving sessions on Kepler's Laws and satellite motion. Padhle AIM720 provides the most structured NEET Physics preparation with chapter-wise modules and regular mock tests.</p>
+            <a href="https://neet.padhle.in" class="cta-btn">Start Learning on Padhle AIM720</a>
+        </div>
+
+        <p>Gravitation forms the bridge between classical mechanics and orbital dynamics. By mastering Newton's laws, Kepler's laws, and satellite motion, you're not just preparing for NEET—you're building conceptual clarity that extends far beyond the exam. Practice consistently,
