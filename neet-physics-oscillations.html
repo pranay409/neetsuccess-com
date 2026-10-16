@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master SHM & oscillations for NEET physics. Learn recurring concepts, equations & problem-solving strategies that appear every year.">
+    <title>Oscillations for NEET: SHM Concepts That Show Up Every Year | NEETSuccess</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #0C1B33;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #E8A020;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero .date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .article-wrapper {
+            background-color: white;
+            padding: 3rem 2rem;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .article-content h2 {
+            font-size: 1.75rem;
+            color: #0C1B33;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .article-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.7rem;
+            color: #444;
+        }
+        
+        .article-content strong {
+            color: #0C1B33;
+            font-weight: 600;
+        }
+        
+        .article-content code {
+            background-color: #f5f5f5;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 5px solid #E8A020;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box h3 {
+            color: #0C1B33;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .highlight-box p {
+            color: #333;
+            margin: 0;
+        }
+        
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 0.8rem 1.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #d68f1a;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        
+        footer a {
+            color: #E8A020;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+            
+            .article-wrapper {
+                padding: 1.5rem 1rem;
+            }
+            
+            .article-content h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://neetsuccess.com/neet-physics-oscillations.html">
+<meta property="og:title" content="Oscillations for NEET: SHM Concepts That Show Up Every Year">
+<meta property="og:description" content="Master SHM &amp; oscillations for NEET physics. Learn recurring concepts, equations &amp; problem-solving strategies that appear every year.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://neetsuccess.com/neet-physics-oscillations.html">
+<meta property="og:site_name" content="NEETSuccess">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Oscillations for NEET: SHM Concepts That Show Up Every Year">
+<meta name="twitter:description" content="Master SHM &amp; oscillations for NEET physics. Learn recurring concepts, equations &amp; problem-solving strategies that appear every year.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Oscillations for NEET: SHM Concepts That Show Up Every Year", "description": "Master SHM & oscillations for NEET physics. Learn recurring concepts, equations & problem-solving strategies that appear every year.", "datePublished": "2026-10-16", "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "NEETSuccess"}, "publisher": {"@type": "Organization", "name": "NEETSuccess"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://neetsuccess.com/neet-physics-oscillations.html"}, "articleSection": "Physics"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://neet.padhle.in" style="color:#E8A020;text-decoration:none;font-weight:600;">Divya Reddy</a> &middot; 📅 October 16, 2026</div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">NEETSuccess</div>
+            <ul>
+                <li><a href="/strategy.html">Strategy</a></li>
+                <li><a href="/motivation.html">Motivation</a></li>
+                <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="subject-badge">PHYSICS</div>
+            <h1>Oscillations for NEET: SHM Concepts That Show Up Every Year</h1>
+            <p class="date">October 16, 2026</p>
+        </div>
+    </section>
+
+    <!-- Main Article -->
+    <div class="article-wrapper">
+        <article class="article-content">
+            <p>Oscillations and Simple Harmonic Motion (SHM) are among the most consistent topics in the NEET physics examination. Every year, the test features 2-4 questions directly from this chapter, and the concepts frequently overlap with waves, sound, and electromagnetic oscillations. Mastering SHM isn't just about scoring marks—it's about understanding the fundamental motion that governs everything from pendulums to LC circuits.</p>
+
+            <p>In this comprehensive guide, we'll break down the core SHM concepts that appear repeatedly in NEET, share proven problem-solving strategies, and highlight the exact equations and scenarios you must master before exam day.</p>
+
+            <h2>1. Fundamentals of SHM and Key Equations (NCERT Class 11, Chapter 14)</h2>
+
+            <p>Simple Harmonic Motion is defined as periodic motion where the restoring force is directly proportional to the displacement and acts opposite to the direction of motion. Mathematically:</p>
+
+            <p><strong>F = -kx</strong></p>
+
+            <p>This foundational equation leads to the defining characteristics of SHM:</p>
+
+            <ul>
+                <li><strong>Displacement:</strong> <code>x(t) = A cos(ωt + φ)</code></li>
+                <li><strong>Velocity:</strong> <code>v(t) = -Aω sin(ωt + φ)</code></li>
+                <li><strong>Acceleration:</strong> <code>a(t) = -Aω² cos(ωt + φ) = -ω²x</code></li>
+                <li><strong>Angular frequency:</strong> <code>ω = √(k/m)</code></li>
+                <li><strong>Time period:</strong> <code>T = 2π/ω = 2π√(m/k)</code></li>
+            </ul>
+
+            <p>The NEET exam frequently tests your ability to identify whether a given motion satisfies the condition <code>a ∝ -x</code>. Common scenarios include mass-spring systems, simple pendulums (for small angles), and floating bodies.</p>
+
+            <div class="highlight-box">
+                <h3>⚡ Key Tip: The Phase Angle</h3>
+                <p>Always pay attention to initial conditions. If the particle starts from mean position moving in positive direction, φ = 0. If it starts from maximum displacement, φ = π/2. This phase angle often determines whether your answer matches the expected result.</p>
+            </div>
+
+            <h2>2. Energy in SHM and Conservation Principles (NCERT Class 11, Chapter 14)</h2>
+
+            <p>Energy conservation is the backbone of SHM problem-solving in NEET. The total mechanical energy in SHM remains constant and is distributed between kinetic and potential energy.</p>
+
+            <ul>
+                <li><strong>Total Energy:</strong> <code>E_total = (1/2)kA² = (1/2)mω²A²</code></li>
+                <li><strong>Kinetic Energy:</strong> <code>KE = (1/2)mv² = (1/2)mω²(A² - x²)</code></li>
+                <li><strong>Potential Energy:</strong> <code>PE = (1/2)kx² = (1/2)mω²x²</code></li>
+            </ul>
+
+            <p>NEET frequently asks questions about:</p>
+
+            <ol>
+                <li>Finding velocity at a specific displacement</li>
+                <li>Determining amplitude given initial conditions</li>
+                <li>Calculating the ratio of KE to PE at particular positions</li>
+                <li>Time taken to reach specific velocities or displacements</li>
+            </ol>
+
+            <p>The energy approach often provides the quickest path to the answer compared to kinematic equations. When you see a NEET question about SHM velocity, immediately think: <code>v = ω√(A² - x²)</code>.</p>
+
+            <h2>3. Simple Pendulum and Real-World Applications (NCERT Class 11, Chapter 14)</h2>
+
+            <p>The simple pendulum is a favorite NEET topic because it combines SHM principles with practical scenarios. For small angles (typically θ &lt; 15°), a pendulum undergoes SHM.</p>
+
+            <p><strong>Key relationships for simple pendulum:</strong></p>
+
+            <ul>
+                <li><strong>Time period:</strong> <code>T = 2π√(L/g)</code></li>
+                <li><strong>Angular frequency:</strong> <code>ω = √(g/L)</code></li>
+                <li><strong>Effective length:</strong> Always consider how the setup affects L (e.g., conical pendulum, pendulum in accelerating elevator)</li>
+            </ul>
+
+            <p>NEET loves questions about:</p>
+
+            <ul>
+                <li>Pendulum in elevators (effective g becomes g ± a)</li>
+                <li>Seconds pendulum (T = 2 seconds, L ≈ 1 meter)</li>
+                <li>Compound pendulum and moment of inertia calculations</li>
+                <li>Coupled pendulums (rarely asked but important for advanced NEET prep)</li>
+            </ul>
+
+            <p>When you encounter a pendulum problem, always first clarify: Is the pivot point accelerating? Is the medium resisting? Are we dealing with small or large oscillations? These details determine which equation to use.</p>
+
+            <h2>4. Damped and Forced Oscillations (NCERT Class 11, Chapter 14 + Extensions)</h2>
+
+            <p>While pure SHM appears most frequently, NEET occasionally includes damped oscillations and resonance concepts, especially in physics papers with higher difficulty levels.</p>
+
+            <p><strong>Damped Oscillations:</strong></p>
+
+            <p>In the presence of friction or air resistance, the amplitude decreases exponentially: <code>A(t) = A₀e^(-t/τ)</code>, where τ is the damping time constant.</p>
+
+            <p>Key concepts:</p>
+
+            <ul>
+                <li>Underdamped motion: Oscillations occur with decreasing amplitude</li>
+                <li>Critically damped motion: Returns to equilibrium without oscillating</li>
+                <li>Overdamped motion: Slow return to equilibrium</li>
+            </ul>
+
+            <p><strong>Resonance:</strong></p>
+
+            <p>When an external driving force has a frequency close to the natural frequency (ω₀) of the system, resonance occurs and amplitude reaches a maximum. NEET questions test conceptual understanding: Why do bridges collapse? Why does a wine glass break at certain frequencies?</p>
+
+            <div class="highlight-box">
+                <h3>⚡ Exam Pattern Alert</h3>
+                <p>In the last 5 years, N
