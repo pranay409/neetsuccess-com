@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Structure of Atom for NEET: Understand quantum numbers, electronic configuration, and ace chemistry. NCERT-based exam guide.">
+    <title>Structure of Atom for NEET: Quantum Numbers and Electronic Configuration | NEETSuccess</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0C1B33;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E8A020;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0C1B33 0%, #1A2F52 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero-date {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        article {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        article p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        article h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0C1B33;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #E8A020;
+            padding-bottom: 10px;
+        }
+
+        article h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1A2F52;
+            margin-top: 28px;
+            margin-bottom: 14px;
+        }
+
+        article ul, article ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        article li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background-color: #FFF6E0;
+            border-left: 5px solid #E8A020;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #E8A020;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .highlight-box p {
+            color: #333;
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .cta-box {
+            background-color: #0C1B33;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .cta-box p {
+            color: #ddd;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #E8A020;
+            color: #0C1B33;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #d4901a;
+        }
+
+        footer {
+            background-color: #0C1B33;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #E8A020;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-brand {
+            font-size: 18px;
+            font-weight: 700;
+            color: #E8A020;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav ul {
+                gap: 16px;
+                font-size: 12px;
+            }
+
+            article {
+                padding: 24px;
+            }
+
+            article h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://neetsuccess.com/neet-chemistry-structure-of-atom.html">
+<meta property="og:title" content="Structure of Atom for NEET: Quantum Numbers and Electronic Configuration">
+<meta property="og:description" content="Master Structure of Atom for NEET: Understand quantum numbers, electronic configuration, and ace chemistry. NCERT-based exam guide.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://neetsuccess.com/neet-chemistry-structure-of-atom.html">
+<meta property="og:site_name" content="NEETSuccess">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Structure of Atom for NEET: Quantum Numbers and Electronic Configuration">
+<meta name="twitter:description" content="Master Structure of Atom for NEET: Understand quantum numbers, electronic configuration, and ace chemistry. NCERT-based exam guide.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Structure of Atom for NEET: Quantum Numbers and Electronic Configuration", "description": "Master Structure of Atom for NEET: Understand quantum numbers, electronic configuration, and ace chemistry. NCERT-based exam guide.", "datePublished": "2026-10-21", "dateModified": "2026-10-21", "author": {"@type": "Organization", "name": "NEETSuccess"}, "publisher": {"@type": "Organization", "name": "NEETSuccess"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://neetsuccess.com/neet-chemistry-structure-of-atom.html"}, "articleSection": "Chemistry"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://neet.padhle.in" style="color:#E8A020;text-decoration:none;font-weight:600;">Sneha Iyer</a> &middot; 📅 October 21, 2026</div>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">NEETSuccess</a>
+            <nav>
+                <ul>
+                    <li><a href="/strategy.html">Strategy</a></li>
+                    <li><a href="/motivation.html">Motivation</a></li>
+                    <li><a href="/best-neet-coaching-2025.html">Coaching</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subject-badge">Chemistry</span>
+            <h1>Structure of Atom for NEET: Quantum Numbers and Electronic Configuration</h1>
+            <p class="hero-date">Published on October 21, 2026</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <article>
+            <p>
+                The structure of the atom is one of the most fundamental topics in NEET Chemistry, particularly in the inorganic chemistry section. Understanding quantum numbers and electronic configuration is crucial not only for solving direct questions but also for comprehending chemical bonding, periodic properties, and reactivity patterns. This article breaks down these concepts in alignment with NCERT standards and highlights patterns commonly tested in NEET.
+            </p>
+
+            <h2>Understanding Quantum Numbers: The Foundation</h2>
+
+            <p>
+                Quantum numbers are mathematical solutions to the Schrödinger wave equation and describe the position and energy of electrons in an atom. According to NCERT Class 11 Chemistry, there are four quantum numbers that together provide a complete description of an electron's state.
+            </p>
+
+            <h3>Principal Quantum Number (n)</h3>
+            <p>
+                The principal quantum number (n) defines the main energy level or shell of an electron. Values of n range from 1 to infinity (1, 2, 3, 4...). Each value corresponds to a shell:
+            </p>
+            <ul>
+                <li>n = 1: K shell (closest to nucleus)</li>
+                <li>n = 2: L shell</li>
+                <li>n = 3: M shell</li>
+                <li>n = 4: N shell</li>
+            </ul>
+            <p>
+                The energy of an electron increases with increasing n. NEET questions frequently ask about the maximum number of electrons in a given shell, calculated using the formula: maximum electrons = 2n².
+            </p>
+
+            <h3>Angular Momentum Quantum Number (l)</h3>
+            <p>
+                Also called the azimuthal quantum number, l defines the subshell or orbital type within a shell. For a given n, l ranges from 0 to (n-1). The subshells are denoted as:
+            </p>
+            <ul>
+                <li>l = 0: s orbital (spherical)</li>
+                <li>l = 1: p orbital (dumbbell-shaped)</li>
+                <li>l = 2: d orbital (cloverleaf-shaped)</li>
+                <li>l = 3: f orbital (complex shapes)</li>
+            </ul>
+            <p>
+                For example, in the third shell (n=3), l can be 0, 1, or 2, giving us 3s, 3p, and 3d subshells. Understanding which subshells are possible for each n is essential for electronic configuration problems.
+            </p>
+
+            <h3>Magnetic Quantum Number (ml)</h3>
+            <p>
+                The magnetic quantum number (ml) specifies the orientation of orbitals in space. For a given l, ml ranges from -l to +l. For example, if l = 1 (p orbital), ml can be -1, 0, or +1, meaning there are three p orbitals per subshell. This concept directly relates to determining the number of degenerate orbitals and is frequently tested in NEET.
+            </p>
+
+            <h3>Spin Quantum Number (ms)</h3>
+            <p>
+                The spin quantum number (ms) describes the spin of the electron, with only two possible values: +1/2 and -1/2. According to the Pauli Exclusion Principle (a critical concept in NEET), no two electrons in an atom can have the same set of all four quantum numbers. This principle ensures that each orbital can hold a maximum of 2 electrons with opposite spins.
+            </p>
+
+            <div class="highlight-box">
+                <h4>📌 Key NEET Tip</h4>
+                <p>
+                    Memorize the relationship between quantum numbers and orbital capacity. For every (n, l, ml) combination, only 2 electrons can exist (differing in ms). This directly applies to questions about maximum electrons in orbitals, subshells, and shells. The formula 2(2l+1) gives the maximum electrons in a subshell.
+                </p>
+            </div>
+
+            <h2>Electronic Configuration: Filling Orbitals Systematically</h2>
+
+            <p>
+                Electronic configuration describes the arrangement of electrons across orbitals in an atom. According to NCERT, two main principles govern this arrangement:
+            </p>
+
+            <h3>Aufbau Principle</h3>
+            <p>
+                The Aufbau principle (German for "building up") states that electrons fill orbitals in order of increasing energy. The order of orbital filling is given by the (n + l) rule: orbitals with lower (n + l) values fill first; if (n + l) values are equal, the orbital with lower n fills first. The typical order for most elements is:
+            </p>
+            <p style="font-family: monospace; background-color: #f0f0f0; padding: 12px; border-radius: 4px; overflow-x: auto;">
+                1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s² 4d¹⁰ 5p⁶ 6s² 4f¹⁴ 5d¹⁰ 6p⁶ 7s²...
+            </p>
+
+            <h3>Hund's Rule</h3>
+            <p>
+                Hund's rule states that electrons prefer to occupy different orbitals within a subshell with parallel spins before pairing up. This minimizes electron-electron repulsion and increases stability. For example, in the 2p subshell (three p orbitals), the first three electrons occupy separate orbitals with parallel spins before the fourth electron pairs up in one orbital.
+            </p>
+
+            <h3>Pauli Exclusion Principle</h3>
+            <p>
+                As mentioned earlier, no two electrons can have identical sets of all four quantum numbers. This principle strictly limits the number of electrons per orbital to 2 and per subshell to 2(2l+1). NEET exams frequently test this concept through questions about electron configurations and identifying valid quantum number sets.
+            </p>
+
+            <h2>Orbital Notation and Common NEET Patterns</h2>
+
+            <p>
+                Electronic configuration can be written in multiple ways. The most common notations in NEET are:
+            </p>
+            <ul>
+                <li><strong>Standard notation:</strong> Lists all electrons (e.g., 1s² 2s² 2p⁶ 3s²)</li>
+                <li><strong>Noble gas notation:</strong> Uses the noble gas core for shorthand (e.g., [Ne] 3s² for Mg)</li>
+                <li><strong>Orbital diagrams:</strong> Visual representation using boxes and arrows for each orbital</li>
+            </ul>
+
+            <p>
+                NEET exams test your understanding through various question types: identifying the period and block of an element from its configuration, determining valence electrons, predicting chemical properties, and identifying exceptions to the Aufbau principle (like Cr and Cu, which have anomalous configurations due to stability of half-filled and fully-filled d subshells).
+            </p>
+
+            <h3>Exam-Specific Focus Areas</h3>
+            <p>
+                Based on NEET's question patterns over recent years, focus on these areas:
+            </p>
+            <ul>
+                <li>Calculating maximum electrons in specific shells, subshells, and orbitals</li>
+                <li>Identifying quantum numbers that are valid or invalid</li>
+                <li>Writing condensed electronic configurations using noble gas notation</li>
+                <li
