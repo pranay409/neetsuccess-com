@@ -6,6 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://neetsuccess.com/neet-chemistry-bonding-molecular-structure.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://neetsuccess.com/neet-chemistry-periodic-classification.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -420,8 +426,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neetsuccess.com/neet-chemistry-bonding-molecular-structure.html</loc>
-    <lastmod>2026-10-23</lastmod>
+    <loc>https://neetsuccess.com/neet-chemistry-redox-reactions.html</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
