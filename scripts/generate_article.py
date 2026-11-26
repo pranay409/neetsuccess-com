@@ -13,6 +13,7 @@ from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(__file__))
 import seo_utils as su
+import topic_picker
 
 DOMAIN = "neetsuccess.com"
 SITE_NAME = "NEETSuccess"
@@ -102,8 +103,7 @@ TOPICS = [
 
 
 def get_today_topic():
-    day = datetime.now().timetuple().tm_yday
-    return TOPICS[day % len(TOPICS)]
+    return topic_picker.pick_topic(TOPICS, SITE_NAME, DOMAIN)
 
 
 def generate_article_html(topic):
