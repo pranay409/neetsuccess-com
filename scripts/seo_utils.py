@@ -314,6 +314,9 @@ def publish_article(*, article_html, site_name, domain, canonical_url, title,
     with open(archive_path, "w", encoding="utf-8") as f:
         f.write(rebuild_archive_page(manifest, site_name, domain))
 
+    import cta
+    tagged = cta.add_cta(tagged, domain)
+    cta.sweep(os.path.dirname(os.path.abspath(index_path)) or '.', domain)
     tagged = tracker.add_tracker(tagged)
     tracker.sweep(os.path.dirname(os.path.abspath(index_path)) or '.')
     return tagged
