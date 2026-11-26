@@ -288,6 +288,7 @@ def publish_article(*, article_html, site_name, domain, canonical_url, title,
     """One call that does the full guaranteed post-processing pipeline for a
     freshly generated article: inject SEO tags, update manifest, rebuild
     sitemap/homepage/archive. Returns the SEO-tagged article HTML to save."""
+    import tracker
     tagged = inject_seo_tags(
         article_html, site_name=site_name, canonical_url=canonical_url,
         title=title, description=description, date_iso=date_iso, category=category,
@@ -313,4 +314,6 @@ def publish_article(*, article_html, site_name, domain, canonical_url, title,
     with open(archive_path, "w", encoding="utf-8") as f:
         f.write(rebuild_archive_page(manifest, site_name, domain))
 
+    tagged = tracker.add_tracker(tagged)
+    tracker.sweep(os.path.dirname(os.path.abspath(index_path)) or '.')
     return tagged
