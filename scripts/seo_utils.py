@@ -117,6 +117,9 @@ def inject_seo_tags(article_html, *, site_name, canonical_url, title, descriptio
     return out[:idx] + tags + out[idx:]
 
 
+from xml.sax.saxutils import escape as _xml_escape
+
+
 def rebuild_sitemap(manifest, domain, path="sitemap.xml"):
     """Regenerate sitemap.xml from scratch from this site's own manifest only —
     eliminates any cross-domain contamination from string-append bugs."""
@@ -126,7 +129,7 @@ def rebuild_sitemap(manifest, domain, path="sitemap.xml"):
     ]
     for a in manifest:
         entries.append(
-            f"  <url>\n    <loc>{a['url']}</loc>\n    <lastmod>{a['date']}</lastmod>\n"
+            f"  <url>\n    <loc>{_xml_escape(a['url'])}</loc>\n    <lastmod>{a['date']}</lastmod>\n"
             f"    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>"
         )
     xml = (
