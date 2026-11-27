@@ -2,7 +2,7 @@ name: Daily NEET Article
 
 on:
   schedule:
-    - cron: '30 3 * * *'
+    - cron: '57 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,12 @@ jobs:
       - name: Generate article
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/generate_article.py
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && python3 -c "import json,sys,datetime as d; t=(d.datetime.utcnow()+d.timedelta(hours=5,minutes=30)).strftime('%Y-%m-%d'); sys.exit(0 if any(a.get('date')==t for a in json.load(open('articles.json'))) else 1)"; then
+            echo "An article for today (IST) is already published - skipping this scheduled run."
+          else
+            python scripts/generate_article.py
+          fi
       - name: Commit and push new article
         run: |
           git config user.name "NEETSuccess Bot"
