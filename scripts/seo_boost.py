@@ -209,6 +209,13 @@ def refresh_after_publish(article_html, canonical_url):
         ensure_key_file()
         html = add_related(article_html, canonical_url)
         llms()
+        try:
+            import insta  # only on sites with an Instagram hub
+            if insta.config():
+                html = insta.add_strip(html)
+                insta.add_to_sitemap(domain(), insta.posts())
+        except ImportError:
+            pass
         return html
     except Exception as e:  # never block publishing
         print(f"seo_boost: skipped ({e})")
