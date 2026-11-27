@@ -30,3 +30,9 @@ jobs:
           git add -A
           git diff --staged --quiet || git commit -m "Daily article: $(date +%Y-%m-%d)"
           git push
+
+      - name: Tell Bing and IndexNow about new pages
+        if: success()
+        run: |
+          sleep 60
+          python scripts/seo_boost.py indexnow-new || true

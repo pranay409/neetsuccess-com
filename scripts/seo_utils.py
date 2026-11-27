@@ -317,6 +317,8 @@ def publish_article(*, article_html, site_name, domain, canonical_url, title,
     import cta
     tagged = cta.add_cta(tagged, domain)
     cta.sweep(os.path.dirname(os.path.abspath(index_path)) or '.', domain)
+    import seo_boost
+    tagged = seo_boost.refresh_after_publish(tagged, canonical_url)
     tagged = tracker.add_tracker(tagged)
     tracker.sweep(os.path.dirname(os.path.abspath(index_path)) or '.')
     return tagged
